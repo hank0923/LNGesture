@@ -1,0 +1,28 @@
+.hidden {
+      display: none;
+}
+
+@keyframes fadeInDown {
+      0% {
+            opacity: 0;
+            transform: translateY(-20px);
+      }
+
+      100% {
+            opacity: 1;
+            transform: translateY(0);
+      }
+}
+
+.fadeInDown {
+      -webkit-animation-name: fadeInDown;
+      animation-name: fadeInDown;
+}
+
+.animated {
+
+      -webkit-animation-duration: .6s;
+      animation-duration: .6s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+}

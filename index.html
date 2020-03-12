@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Lato Font -->
+      <!-- <link href="css/latofonts.css" rel="stylesheet"> -->
+      <!-- Custom CSS -->
+      <link href="css/doc-style.css" rel="stylesheet">
+      <link href="css/custom.css" rel="stylesheet">
+      <link href="css/handtrack.css" rel="stylesheet">
+</head>
+
+<body>
+     <div id="voiceSection" class="row fixed-toolbar voicebar hidden animated">
+        <div class="d-flex justify-content-center" style="width: 100%">
+            <div id="voiceInput" class="voice-input"></div>
+            <div style="width: 48px; margin-left:18px;" id="iconVoice"><img src="img/voice2.png" style="width: 100%"></div>
+        </div>
+        <div id="helpSection" class="d-flex justify-content-center align-items-center hidden" style="width: 100%; padding: 12px 0 0 0">
+            
+        </div>
+      </div>
+      <div class="row fixed-toolbar" id="top-toolbar">
+            <div class="row sub-header " style="width: 100%">
+                  <div class="container pagewrapper ">
+                        <div class="left-section " style="padding: 8px 0;">
+                              <div class="result-text red " style="font-size:14px;">Document:</div>
+                              <div class="result-text " style="padding: 0 8px;font-size:14px; ">(NSW) UNIFORM CIVIL PROCEDURE RULES 2005 [r 24.4] r 24.4 Judicial officer or court officer as examiner</div>
+                              <div class="vertical-divider " style="height: 16px; margin-right: 12px;font-size:14px;"></div>
+                              <div class="link-dropdown icon ">Actions</div>
+                        </div>
+                        <div class="right-section " style="padding: 8px 0;"></div>
+                  </div>
+            </div>
+            <div class="row d-flex justify-content-between align-items-center toolbar " style="border:none;padding:8px 0 14px 14px;width: 100%">
+                  <div class="d-flex align-items-center " style="height: 30px; ">
+                        <i class="icon la-Folder "></i>
+                        <i class="icon la-TriangleDown "></i>
+                        <div class="vertical-divider larger "></div>
+                        <i class="icon la-Print "></i>
+                        <div class="vertical-divider larger " style="margin-right: 4px; "></div>
+                        <i class="icon la-TriangleDown " style="margin-right: 4px; "></i>
+                        <button class="btn btn-light " style="margin-right: 4px; ">Go to <i class="icon la-TriangleDown "></i></button>
+                        <button class="btn btn-light " style="margin-right: 4px; "><span style="margin-right: 14px; ">All terms</span> 19 <i class="icon la-TriangleDown "></i></button>
+                        <i class="icon la-ShowPane " style="font-size:28px;margin-left: 8px;color:#d0d0d0 "></i>
+                        <i class="icon la-TriangleDown " style="font-size:28px;margin-right: 8px; "></i>
+                        <div style="position: relative;margin-right: 8px;">
+                              <input type="text" class="form-control" placeholder="Search Document" style="border-radius: 0; background: #fff; font-size: 14px;">
+                              <i class="la-Search2 icon" style="position: absolute;right:10px;top:-6px;"></i>
+                        </div>
+                        <li data-comp="highlight" class="hideInMobile noborder">
+                              <span class="textFont">Highlight</span>
+                              <label class="input" for="highlighttoggle_0">
+                                    <input id="highlighttoggle_0" class="switch" type="checkbox" checked="" aria-label="Highlight">
+                                    <span class="slider">
+                                          <span class="checkmark">
+                                                <i class="icon la-CloseRemove"></i>
+                                                <i class="icon la-Check"></i>
+                                          </span>
+                                    </span>
+                              </label></li>
+                        <div class="vertical-divider larger" style="margin-right: 4px; "></div>
+                  </div>
+                  <div class="d-flex align-items-center " style="height: 30px;">
+                        <div class="icon la-TriangleLeft" style="margin-top: 3px"></div>
+                        <div>3 of 850</div>
+                        <div class="vertical-divider"></div>
+                        <div class="link-todoc ">Result list</div>
+                        <div class="icon la-TriangleRight1" style="margin-top: 3px"></div>
+                  </div>
+            </div>
+      </div>
+      <div class="row">
+            <nav class="navbar navbar-expand-xs navbar-dark globalnav">
+                  <div class="container pagewrapper">
+                        <div style="display: flex;">
+                              <div class="nav_productswitcher">
+                                    <div class="nav_productswitcher_wrapper">
+                                          <div class="nav_currentproduct">
+                                                <a>
+                                                      <hgroup>
+                                                            <h1>Lexis Advance<sup>®</sup></h1>
+                                                            <h2>Pacific Research</h2>
+                                                      </hgroup>
+                                                </a>
+                                          </div>
+                                          <div aria-label="Open Product Menu" class="icon la-ProductSelectChevron"></div>
+                                    </div>
+                              </div>
+                              <div class="nav_browse">
+                                    <div aria-label="Browse" class="browse-event-menu-item icon la-Explore">
+                                          <span style="margin-left:8px;margin-right:4px;">Browse</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="search-section">
+                              <div class="wrapper">
+                                    <div class="input-group">
+                                          <input type="text" class="form-control" placeholder="Enter terms, publications, or a citation">
+                                          <div class="input-group-append">
+                                                <span class="input-group-text search-everything icon la-TriangleRightAfter" ">Search: Everything
+                                </span>
+                                <span class=" input-group-text la-Search ">
+                                    <img src=" img/search.svg ">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div  style=" display: flex; ">
+                    <div class=" nav_browse ">
+                        <div class=" browse-event-menu-item icon small ">
+                            <span>Matter:-None-</span>
+                        </div>
+                    </div>
+                    <div class=" nav_browse ">
+                        <div class=" browse-event-menu-item icon small ">
+                            <span>History</span>
+                        </div>
+                    </div>
+                    <div class=" nav_browse ">
+                        <div class=" menu-item ">
+                            <span>Help</span>
+                        </div>
+                    </div>
+                    <div class=" nav_browse" style="position: relative;">
+                                                      <div class=" browse-event-menu-item icon small dropdown">
+                                                            <span id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">More</span>
+                                                            <div class="dropdown-menu dropdown-menu-right c-dropdown" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">Enter Guesture Mode</a>
+                                                            </div>
+                                                      </div>
+                                          </div>
+                                    </div>
+                              </div>
+            </nav>
+      </div>
+      <div class=" red-border ">&nbsp;</div>
+      <div class=" row sub-header ">
+            <div class=" container pagewrapper ">
+                  <div class=" left-section ">
+                        <div class=" result-text red ">Document:</div>
+                        <div class=" result-text " style=" padding: 0 8px; ">(NSW) UNIFORM CIVIL PROCEDURE RULES 2005 [r 24.4] r 24.4 Judicial officer or court officer as examiner</div>
+                        <div class=" vertical-divider " style=" height: 16px; margin-right: 12px; "></div>
+                        <div class=" link-dropdown icon ">Actions</div>
+                  </div>
+                  <div class=" right-section "></div>
+            </div>
+      </div>
+      <div class=" toolbar-gvs noreader" role="toolbar">
+            <div>
+                  <ul>
+                        <li class="selected hidden" data-menu="viewtray" data-role="count">
+                              <div class="dropdown">
+                                    <span class="mobileWhiteRectangle"></span>
+                                    <button class="has_tooltip" type="button" data-action="viewtray" aria-label="View Tray" data-qaid="toolbar_viewtray" aria-expanded="false" aria-controls="viewtray-dropdown">
+                                          <span class="select"></span>
+                                          <span class="select more"> SELECTED</span>
+                                          <span class="icon la-TriangleDown"></span>
+                                          <span role="tooltip" class="tooltip">View Tray</span>
+                                    </button>
+                                    <div class="dropdown-menu noscroll noWidth" id="viewtray-dropdown" role="dialog" aria-labelledby="selecteditemsID">
+                                          <div class="tray ">
+                                                <div class="dropdown-header">
+                                                      <span class="selecteditems" id="selecteditemsID">Selected Items</span>
+                                                      <div class="groupall">
+                                                            <button class="button secondary" data-action="cancel">Clear All</button>
+                                                      </div>
+                                                </div>
+                                                <div class="dropdown-items">
+                                                      <ul>
+                                                      </ul>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </li>
+                        <li data-menu="folder">
+                              <div class="dropdown">
+                                    <span class="mobileWhiteRectangle"></span>
+                                    <button class="has_tooltip" type="button" data-action="folder" aria-label="Save to Folder" aria-expanded="false" aria-controls="folder-dropdown" data-qaid="toolbar_folder">
+                                          <span class="icon la-Folder"></span>
+                                          <span></span>
+                                          <span class="icon la-TriangleDown"></span>
+                                          <span class="tooltip">Folders</span>
+                                    </button>
+                                    <div class="dropdown-menu noscroll" id="folder-dropdown">
+                                    </div>
+                              </div>
+                        </li>
+                        <li class="expandable" data-menu="deliverymenu">
+                              <ul>
+                                    <li>
+                                          <button class="has_tooltip" data-action="printopt" aria-label="Print" data-label="Print" data-qaid="toolbar_printopt" aria-expanded="false">
+                                                <span class="icon la-Print"></span>
+                                                <span class="tooltip">Print</span>
+                                          </button>
+                                    </li>
+                                    <li>
+                                          <button class="has_tooltip" data-action="email" aria-label="Email" data-label="Email" data-qaid="toolbar_email" aria-expanded="false">
+                                                <span class="icon la-Email"></span>
+                                                <span class="tooltip">Email</span>
+                                          </button>
+                                    </li>
+                                    <li class="lastUsed">
+                                          <button class="has_tooltip" data-action="downloadopt" aria-label="Download" data-label="Download" data-qaid="toolbar_downloadopt" aria-expanded="false">
+                                                <span class="icon la-Download"></span>
+                                                <span class="tooltip">Download</span>
+                                          </button>
+                                    </li>
+                                    <li>
+                                          <button class="has_tooltip" data-action="dropboxopt" aria-label="Send to Dropbox" data-label="Send to Dropbox" data-qaid="toolbar_dropboxopt" aria-expanded="false">
+                                                <span class="icon la-Dropbox"></span>
+                                                <span class="tooltip">Send to Dropbox</span>
+                                          </button>
+                                    </li>
+                                    <li>
+                                          <button class="has_tooltip" data-action="printablepage" aria-label="Printer-friendly view" data-label="Printer-friendly view" data-qaid="toolbar_printablepage" aria-expanded="false">
+                                                <span class="icon la-PrintablePage"></span>
+                                                <span class="tooltip">Printer-friendly view</span>
+                                          </button>
+                                    </li>
+                                    <li class="dropdown-toggle">
+                                          <div class="dropdown">
+                                                <button class="has_tooltip" data-action="deliverymenu" aria-label="" data-qaid="toolbar_deliverymenu" aria-expanded="false">
+                                                      <span class="icon la-TriangleDown"></span>
+                                                </button>
+                                                <span class="mobileWhiteRectangle"></span>
+                                                <div class="dropdown-menu noscroll noWidth" role="dialog">
+                                                      <div class="biggerText">
+                                                            <span>Deliver&nbsp;</span>
+                                                            <span class="source">selected document</span>
+                                                            <span>...</span>
+                                                      </div>
+                                                      <button class="has_tooltip" type="button" data-action="printopt" data-label="Print" aria-label="Print" data-qaid="dropdown_printopt">
+                                                            <span class="icon la-Print"></span>
+                                                            <span>Print</span>
+                                                      </button>
+                                                      <button class="has_tooltip" type="button" data-action="email" data-label="Email" aria-label="Email" data-qaid="dropdown_email">
+                                                            <span class="icon la-Email"></span>
+                                                            <span>Email</span>
+                                                      </button>
+                                                      <button class="has_tooltip" type="button" data-action="downloadopt" data-label="Download" aria-label="Download" data-qaid="dropdown_downloadopt">
+                                                            <span class="icon la-Download"></span>
+                                                            <span>Download</span>
+                                                      </button>
+                                                      <button class="has_tooltip" type="button" data-action="dropboxopt" data-label="Send to Dropbox" aria-label="Send to Dropbox" data-qaid="dropdown_dropboxopt">
+                                                            <span class="icon la-Dropbox"></span>
+                                                            <span>Send to Dropbox</span>
+                                                      </button>
+                                                      <button class="has_tooltip" type="button" data-action="printablepage" data-label="Printer-friendly view" aria-label="Printer-friendly view" data-qaid="dropdown_printablepage">
+                                                            <span class="icon la-PrintablePage"></span>
+                                                            <span>Printer-friendly view</span>
+                                                      </button>
+                                                </div>
+                                          </div>
+                                    </li>
+                              </ul>
+                        </li>
+                  </ul>
+                  <ul>
+                        <li data-comp="more" class="expandable hidden">
+                              <ul>
+                                    <li class="dropdown-toggle">
+                                          <div class="dropdown ">
+                                                <span class="mobileWhiteRectangle"></span>
+                                                <button>
+                                                      <span class="icon la-DeliveryOptions"></span>
+                                                </button>
+                                                <div class="dropdown-menu noscroll noWidth">
+                                                </div>
+                                          </div>
+                                    </li>
+                              </ul>
+                        </li>
+                        <li data-comp="jumpto">
+                              <div class="dropdown ">
+                                    <span class="mobileWhiteRectangle"></span>
+                                    <button class="dropdown-toggle">
+                                          <span>Go to</span>
+                                          <span class="icon la-TriangleDown"></span>
+                                          <span class="tooltip">Go to</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                          <button data-action="jumpto" data-value="JUMPTO_Top">Top of document</button>
+                                          <button data-action="jumpto" data-value="JUMPTO_Historyd264774343e272">History</button>
+                                          <button data-action="jumpto" data-value="JUMPTO_Annotationsd264774343e277">Commentary Annotations</button>
+                                    </div>
+                              </div>
+                        </li>
+                        <li data-comp="paginator" class="hideInMobile noborder hidden">
+                              <span class="textFont">Page</span>
+                              <input class="reporterPage" placeholder="Page #" type="text" value="" autocomplete="off">
+                              <button data-action="prevpage" aria-label="Previous page" disabled="">
+                                    <span class="icon la-ShowPane"></span>
+                                    <span class="tooltip">Previous page</span>
+                              </button>
+                              <button data-action="nextpage" aria-label="Next page">
+                                    <span class="icon la-HidePane"></span>
+                                    <span class="tooltip">Next page</span>
+                              </button>
+                        </li>
+                        <li data-comp="termnavigator" class="hideInMobile noborder hidden">
+                              <div class="dropdown marginRight ">
+                                    <button class="dropdown-toggle split">
+                                    </button>
+                                    <div class="dropdown-menu">
+                                    </div>
+                              </div>
+                              <button data-action="previousterm" data-value="" disabled="">
+                                    <span class="icon la-ShowPane"></span>
+                                    <span class="tooltip">Previous passage</span>
+                              </button>
+                              <button data-action="nextterm" data-value="">
+                                    <span class="icon la-HidePane"></span>
+                                    <span class="tooltip">Next passage</span>
+                              </button>
+                        </li>
+                        <li data-comp="passagenavigator" class="noborder hideInMobile hidden"><span class="textFont bordered">Navigate Legal Issue Trail passages</span>
+                              <button disabled="" data-action="previouspassage" aria-label="Previous passage">
+                                    <span class="icon la-ShowPane"></span>
+                                    <span class="tooltip">Previous passage</span>
+                              </button>
+                              <button data-action="nextpassage" aria-label="Next passage">
+                                    <span class="icon la-HidePane"></span>
+                                    <span class="tooltip">Next passage</span>
+                              </button></li>
+                        <li data-comp="search" class="noborder">
+                              <button id="searchwithinshow" class="bordered " aria-label="Search Document">
+                                    <span class="hideInMobile placeholder-sim">Search Document</span>
+                                    <span class="icon la-Search"></span>
+                                    <span class="icon la-TriangleDown mobileOnly"></span>
+                                    <span class="tooltip">Search Document</span>
+                              </button>
+                        </li>
+                        <li data-comp="editlineitem" class="hidden"><button data-action="editlineitems">
+                                    <span class="icon la-Edit"></span>
+                                    <span class="tooltip">Launch Editor</span>
+                              </button>
+                        </li>
+                        <li data-comp="highlight" class="hideInMobile noborder hidden">
+                              <span class="textFont">Highlight</span>
+                              <label class="input" for="highlighttoggle_0">
+                                    <input id="highlighttoggle_0" class="switch" type="checkbox" checked="" aria-label="Highlight">
+                                    <span class="slider">
+                                          <span class="checkmark">
+                                                <i class="icon la-CloseRemove"></i>
+                                                <i class="icon la-Check"></i>
+                                          </span>
+                                    </span>
+                              </label></li>
+                        <li data-comp="overflow" class="mobileOnly">
+                              <div class="dropdown ">
+                                    <button class="dropdown-toggle overflow-trigger">
+                                          <span class="icon la-DeliveryOptions"></span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                          <ul>
+                                                <li>
+                                                      <button class="split" data-action="documentoptions">
+                                                            <span>View Related Content</span>
+                                                            <span class="icon la-TriangleRight"></span>
+                                                      </button>
+                                                </li>
+                                                <li data-comp="paginator" class="hidden">
+                                                      <span class="textFont">Page</span>
+                                                      <input class="reporterPage" placeholder="Page #" type="text" value="" autocomplete="off">
+                                                      <button data-action="prevpage" aria-label="Previous page" disabled="">
+                                                            <span class="icon la-ShowPane"></span>
+                                                            <span class="tooltip">Previous page</span>
+                                                      </button>
+                                                      <button data-action="nextpage" aria-label="Next page">
+                                                            <span class="icon la-HidePane"></span>
+                                                            <span class="tooltip">Next page</span>
+                                                      </button>
+                                                </li>
+                                                <li data-comp="highlight" class="hideInMobile noborder hidden">
+                                                      <span class="textFont">Highlight</span>
+                                                      <label class="input" for="highlighttoggle_1">
+                                                            <input id="highlighttoggle_1" class="switch" type="checkbox" checked="" aria-label="Highlight">
+                                                            <span class="slider">
+                                                                  <span class="checkmark">
+                                                                        <i class="icon la-CloseRemove"></i>
+                                                                        <i class="icon la-Check"></i>
+                                                                  </span>
+                                                            </span>
+                                                      </label></li>
+                                                <li data-comp="termnavigator" class="hidden">
+                                                      <div class="dropdown marginRight ">
+                                                            <button class="dropdown-toggle split">
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                            </div>
+                                                      </div>
+                                                      <button data-action="previousterm" data-value="" disabled="">
+                                                            <span class="icon la-ShowPane"></span>
+                                                            <span class="tooltip">Previous passage</span>
+                                                      </button>
+                                                      <button data-action="nextterm" data-value="">
+                                                            <span class="icon la-HidePane"></span>
+                                                            <span class="tooltip">Next passage</span>
+                                                      </button>
+                                                </li>
+                                          </ul>
+                                    </div>
+                              </div>
+                        </li>
+                        <li class="fill"></li>
+                  </ul>
+                  <ul>
+                        <li data-comp="navigator" class="noborder results"></li>
+                  </ul>
+                  <!--[if gt IE 8]><!-->
+                  <!--<![endif]-->
+            </div>
+            <div class="static hidden">
+                  <li data-comp="navigator" class="noborder results"></li>
+            </div>
+      </div>
+      <div class="container-fluid content-section ">
+            <div class="row ">
+                  <!-- ASIDE BEGIN -->
+                  <!--  -->
+                  <!--  -->
+                  <aside id="aside" class="minitoc leftpane noreader toc-pane" style="margin-right: 0;">
+                        <ul>
+                              <li style="border-bottom:1px solid #c5c5c5; margin-bottom: 10px;">
+                                    <span><a style="text-align: center;width: 100%;font-size: 13px;" href="#">View full table of contents</a></span>
+                              </li>
+                              <!-- top show more -->
+                              <!-- <div class="showmore" id="loadMoreTOCtop" style="padding-bottom: 12px;">
+                        <div class="morebtn" id="more2" style="border-top:none;box-shadow: 0 3px 5px rgba(0, 3, 5, 0.07)">
+                            <i class="icon la-ShowPane" style="font-size:14px;color:#07C"></i>
+                            <span style="font-weight: 400;">Show more</span>
+                        </div>
+                    </div>
+
+                    <div class="loading" id="loading1">
+                        <img src="img/loading.gif">
+                    </div> 
+
+                    <span class="top-hidden no-display"></span>
+                    -->
+                              <!--  -->
+                              <li class="collapsed">
+                                    <span>
+                                          <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                          <a class="nolink">Ritchie's Uniform Civil Procedure NSW</a>
+                                    </span>
+                                    <ul class="subnodes">
+                                          <li class="collapsed">
+                                                <span>
+                                                      <a class="nolink no-expand">Uniform Civil Procedure Rules 2005 (NSW)</a>
+                                                </span>
+                                          </li>
+                                          <li class="collapsed">
+                                                <span>
+                                                      <a class="nolink no-expand">UNIFORM CIVIL PROCEDURE RULES 2005</a>
+                                                </span>
+                                          </li>
+                                          <li class="collapsed">
+                                                <span>
+                                                      <a class="nolink no-expand">PART 24 TAKING EVIDENCE OTHERWISE THAN AT TRIAL [rr 24.1–24.20] [rr 24.1–24.20]</a>
+                                                </span>
+                                          </li>
+                                    </ul>
+                              </li>
+                              <li class="collapsed">
+                                    <span>
+                                          <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                          <a href="#">[r 24.1] r 24.1 Application of Part</a>
+                                    </span>
+                                    <ul class="subnodes">
+                                          <li class="collapsed">
+                                                <span>
+                                                      <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                                      <a href="#">NOTES</a>
+                                                </span>
+                                                <ul class="subnodes">
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.1.5] Related legislation</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.1.10] Admissibility of the evidence obtained</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.1.15] Related provisions of the SCR</a>
+                                                            </span>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                    </ul>
+                              </li>
+                              <li class="collapsed">
+                                    <span>
+                                          <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                          <a href="#">[r 24.2] r 24.2 Construction of certain references</a>
+                                    </span>
+                                    <ul class="subnodes">
+                                          <li class="collapsed">
+                                                <span>
+                                                      <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                                      <a href="#">NOTES</a>
+                                                </span>
+                                                <ul class="subnodes">
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.2.5] Outline of statutory provisions</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.2.10] Evidence on commission — historical note</a>
+                                                            </span>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                    </ul>
+                              </li>
+                              <li class="collapsed">
+                                    <span>
+                                          <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                          <a href="#">[r 24.3] r 24.3 Order for examination of witness</a>
+                                    </span>
+                                    <ul class="subnodes">
+                                          <li class="collapsed">
+                                                <span>
+                                                      <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                                      <a href="#">NOTES</a>
+                                                </span>
+                                                <ul class="subnodes">
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.3.5] Discretion to order examination — witness’ unavailability</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.3.10] Discretion to order examination — “interests of justice”</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.3.15] Discretion to order examination — pragmatic guidelines</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.3.20] Alternative procedures for taking evidence at trial — video link</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.3.25] Credibility issues — examination of witnesses and alternative procedures</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.3.30] Documents — orders for production at examination</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.3.35] Foreign examination venue — power to order examination</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.3.40] Examination of a person outside Australia — letters of request</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.3.45] Witnesses whose evidence may be taken</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.3.50] Commercial Arbitration Act 2010</a>
+                                                            </span>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                    </ul>
+                              </li>
+                              <li class="collapsed">
+                                    <span class="selecteditem">
+                                          <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                          <a href="#" class="selectednode">[r 24.4] r 24.4 Judicial officer or court officer as examiner</a>
+                                    </span>
+                                    <ul class="subnodes">
+                                          <li class="collapsed">
+                                                <span>
+                                                      <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                                      <a href="#">NOTES</a>
+                                                </span>
+                                                <ul class="subnodes">
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.4.5] Examiner — persons who may be appointed — generally</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.4.10] Examiner — persons who may be appointed — foreign examination venue</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.4.15] Judge as examiner</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.4.20] Payment of examination expenses</a>
+                                                            </span>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                    </ul>
+                              </li>
+                              <li class="collapsed">
+                                    <span>
+                                          <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                          <a href="#">[r 24.5] r 24.5 Letter of request</a>
+                                    </span>
+                                    <ul class="subnodes">
+                                          <li class="collapsed">
+                                                <span>
+                                                      <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                                      <a href="#">NOTES</a>
+                                                </span>
+                                                <ul class="subnodes">
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.5.5] Letters of request</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.5.10] The Hague Convention and related legislation</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.5.15] Form of letters of request</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.5.20] Production of documents</a>
+                                                            </span>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                    </ul>
+                              </li>
+                              <li class="collapsed">
+                                    <span>
+                                          <a href="#">[r 24.6] r 24.6 Evidence otherwise than on oath</a>
+                                    </span>
+                              </li>
+                              <li class="collapsed">
+                                    <span>
+                                          <a href="#">[r 24.7] r 24.7 Documents for examiner</a>
+                                    </span>
+                              </li>
+                              <li class="collapsed">
+                                    <span>
+                                          <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                          <a href="#">[r 24.8] r 24.8 Appointment for examination</a>
+                                    </span>
+                                    <ul class="subnodes">
+                                          <li class="collapsed">
+                                                <span>
+                                                      <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                                      <a href="#">NOTES</a>
+                                                </span>
+                                                <ul class="subnodes">
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.8.5] The power to compel a witness' attendance</a>
+                                                            </span>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                    </ul>
+                              </li>
+                              <li class="collapsed">
+                                    <span>
+                                          <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                          <a href="#">[r 24.9] r 24.9 Conduct of examination</a>
+                                    </span>
+                                    <ul class="subnodes">
+                                          <li class="collapsed">
+                                                <span>
+                                                      <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                                      <a href="#">NOTES</a>
+                                                </span>
+                                                <ul class="subnodes">
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.9.5] Conduct of examination</a>
+                                                            </span>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                    </ul>
+                              </li>
+                              <li class="collapsed">
+                                    <span>
+                                          <a href="#">[r 24.10] r 24.10 Examination of additional persons</a>
+                                    </span>
+                              </li>
+                              <li class="collapsed">
+                                    <span>
+                                          <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                          <a href="#">[r 24.11] r 24.11 Objection</a>
+                                    </span>
+                                    <ul class="subnodes">
+                                          <li class="collapsed">
+                                                <span>
+                                                      <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                                      <a href="#">NOTES</a>
+                                                </span>
+                                                <ul class="subnodes">
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.11.1] Determination of objections taken at the examination</a>
+                                                            </span>
+                                                      </li>
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.11.5] Objections to evidence</a>
+                                                            </span>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                    </ul>
+                              </li>
+                              <li class="collapsed">
+                                    <span>
+                                          <a href="#">[r 24.12] r 24.12 Recording of evidence generally</a>
+                                    </span>
+                              </li>
+                              <li class="collapsed">
+                                    <span>
+                                          <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                          <a href="#">[r 24.13] r 24.13 Audio-visual recording of evidence</a>
+                                    </span>
+                                    <ul class="subnodes">
+                                          <li class="collapsed">
+                                                <span>
+                                                      <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                                      <a href="#">NOTES</a>
+                                                </span>
+                                                <ul class="subnodes">
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.13.5] Audio-visual recording</a>
+                                                            </span>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                    </ul>
+                              </li>
+                              <li class="collapsed">
+                                    <span>
+                                          <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                          <a href="#">[r 24.14] r 24.14 Authentication and filing</a>
+                                    </span>
+                                    <ul class="subnodes">
+                                          <li class="collapsed">
+                                                <span>
+                                                      <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                                      <a href="#">NOTES</a>
+                                                </span>
+                                                <ul class="subnodes">
+                                                      <li class="collapsed">
+                                                            <span>
+                                                                  <a href="#" class="no-expand">[24.14.5] Authentication</a>
+                                                            </span>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                    </ul>
+                              </li>
+                              <span class='hiddenSection no-display'>
+                                    <li class="collapsed">
+                                          <span>
+                                                <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                                <a href="#">[r 24.15] r 24.15 Special report</a>
+                                          </span>
+                                          <ul class="subnodes">
+                                                <li class="collapsed">
+                                                      <span>
+                                                            <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                                            <a href="#">NOTES</a>
+                                                      </span>
+                                                      <ul class="subnodes">
+                                                            <li class="collapsed">
+                                                                  <span>
+                                                                        <a href="#" class="no-expand">[24.15.5] Special report</a>
+                                                                  </span>
+                                                            </li>
+                                                      </ul>
+                                                </li>
+                                          </ul>
+                                    </li>
+                                    <li class="collapsed">
+                                          <span>
+                                                <a href="#">[r 24.16] r 24.16 Default of witness</a>
+                                          </span>
+                                    </li>
+                                    <li class="collapsed">
+                                          <span>
+                                                <a href="#">[r 24.17] r 24.17 Order for payment of expenses</a>
+                                          </span>
+                                    </li>
+                                    <li class="collapsed">
+                                          <span>
+                                                <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                                <a href="#">[r 24.18] r 24.18 Perpetuation of testimony</a>
+                                          </span>
+                                          <ul class="subnodes">
+                                                <li class="collapsed">
+                                                      <span>
+                                                            <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                                            <a href="#">NOTES</a>
+                                                      </span>
+                                                      <ul class="subnodes">
+                                                            <li class="collapsed">
+                                                                  <span>
+                                                                        <a href="#" class="no-expand">[24.18.5] Proceedings to perpetuate testimony</a>
+                                                                  </span>
+                                                            </li>
+                                                            <li class="collapsed">
+                                                                  <span>
+                                                                        <a href="#" class="no-expand">[24.18.10] Publication of evidence</a>
+                                                                  </span>
+                                                            </li>
+                                                      </ul>
+                                                </li>
+                                          </ul>
+                                    </li>
+                                    <li class="collapsed">
+                                          <span>
+                                                <a href="#">[r 24.19] r 24.19 Operation of directions under Evidence on Commission Act 1995</a>
+                                          </span>
+                                    </li>
+                                    <li class="collapsed">
+                                          <span>
+                                                <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                                <a href="#">[r 24.20] r 24.20 Witness expenses</a>
+                                          </span>
+                                          <ul class="subnodes">
+                                                <li class="collapsed">
+                                                      <span>
+                                                            <button type="button" class="icon la-TriangleRight trigger collapsed" aria-label="Expand"></button>
+                                                            <a href="#">NOTES</a>
+                                                      </span>
+                                                      <ul class="subnodes">
+                                                            <li class="collapsed">
+                                                                  <span>
+                                                                        <a href="#" class="no-expand">[24.20.5] Reasonable expenses</a>
+                                                                  </span>
+                                                            </li>
+                                                      </ul>
+                                                </li>
+                                          </ul>
+                                    </li>
+                              </span>
+                              <!-- End of second hidden section -->
+                              <!--  -->
+                              <!--  -->
+                              <div class="showmore" id="loadMoreTOC" style="padding-top: 12px;border-bottom: 1px solid #d2d4d5;">
+                                    <div class="morebtn" id="more1" style="border-bottom:none;box-shadow: 0 -3px 5px rgba(0, 3, 5, 0.07)" data-toggle="tooltip" title="Show next 10" data-container="body">
+                                          <i class="icon la-TriangleDown" style="font-size:14px;color:#07C"></i>
+                                          <span style="font-weight: 600;font-size:13px;">Show more</span>
+                                    </div>
+                              </div>
+                              <div class="loading" id="loading2">
+                                    <img src="img/loading.gif">
+                              </div>
+                        </ul>
+                  </aside>
+                  <!-- ASIDE END -->
+                  <!--  -->
+                  <!--  -->
+                  <div class="arrow-section">
+                        <div class="fixed inner-arrow no-display">
+                              <div title="scroll to current document position">
+                                    <div class="arrow-up no-display"></div>
+                              </div>
+                              <div title="scroll to current document position">
+                                    <div class="arrow-down no-display"></div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="col search-resultlist" style="padding-right: 28px;padding-left: 0 ">
+                        <div class="document-wrapper isActive">
+                              <div class="document-pane ">
+                                    <div class="left-tabs noreader ">
+                                          <button type="button " data-id="minitoc " data-tocid="/shared/tableofcontents/urn:contentItem:5995-1FV1-FBKD-R000-00000-00 " class="minitoc-tab selected" aria-label="Table of Contents ">
+                                                <span class="icon la-ShowPane "></span>
+                                                <span class="icon la-HidePane"></span>
+                                                Table of Contents
+                                                <span class="icon la-ShowPane "></span>
+                                                <span class="icon la-HidePane"></span>
+                                          </button>
+                                    </div>
+                                    <div class="document-text">
+                                          <section class="document" id="document">
+                                                <section class="doc-content SS_contentdocument small" style="font-family: verdana;">
+                                                      <div class="tocnavlinks">
+                                                            <a href="#" class="previous icon la-TriangleLeft tocdocprev" style="display: inline;">Previous</a>
+                                                            <a href="#" class="next icon la-TriangleRightAfter tocdocnext" style="display: inline;">Next</a>
+                                                      </div>
+                                                      <div class="SS_AU">
+                                                            <header class="SS_DocumentHeader">
+                                                                  <h1 id="SS_DocumentTitle">(NSW) UNIFORM CIVIL PROCEDURE RULES 2005 [r 24.4] r 24.4 Judicial officer or court officer as examiner</h1>
+                                                                  <p id="SS_DocumentButtons"><button type="button" data-buttontype="hideShow" id="HideShow_Commentary" data-texttohide="Hide Commentary" data-texttoshow="Show Commentary">Hide Commentary</button></p>
+                                                                  <p class="SS_DocumentInfo">Ritchie's Uniform Civil Procedure NSW</p>
+                                                                  <p class="SS_DocumentInfo">Current to: SI 171 of 2019 • Commentary Last updated: February 2016</p>
+                                                                  <p class="SS_DocumentInfo">P W Taylor SC, M Meek SC and The Hon Justice G Bellew</p>
+                                                            </header><span class="SS_LeftAlign"><br>
+                                                                  <ul class="SS_TOCTrail" id="TOCTrail">
+                                                                        <li><a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:5D6V-J641-JW5H-X3D3-00000-00" data-pinpage="" data-contentcomponentid="285514" data-priceplan="">Ritchie's Uniform Civil Procedure NSW</a></li>
+                                                                        <li><a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:58VP-5SX1-JSJC-X1GX-00000-00" data-pinpage="" data-contentcomponentid="285514" data-priceplan="">Uniform Civil Procedure Rules&nbsp;2005 (NSW)</a></li>
+                                                                        <li><a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:58VP-5V51-JP9P-G1D8-00000-00" data-pinpage="" data-contentcomponentid="285514" data-priceplan="">UNIFORM CIVIL PROCEDURE RULES 2005</a></li>
+                                                                        <li><a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:58VP-5V51-JP9P-G1Y6-00000-00" data-pinpage="" data-contentcomponentid="285514" data-priceplan="">PART 24 TAKING EVIDENCE OTHERWISE THAN AT TRIAL [rr&nbsp;24.1–24.20] [rr 24.1–24.20]</a></li>
+                                                                  </ul><br>
+                                                                  <div includeintoc="false"><a id="UCPN.UCPR.UCPRN05.R24-4"></a>
+                                                                        <h1 class="SS_InlineHeading1">[r 24.4] 24.4 Judicial officer or court officer as examiner</h1>
+                                                                        <div class="SS_BasicNote">
+                                                                              <p>(cf SCR Part 27, rule 1C; DCR Part 25, rule 3)</p>
+                                                                        </div>
+                                                                        <div><a id="UCPN.UCPR.UCPRN05.R24-4.1"></a>
+                                                                              <h3 class="SS_InlineHeading3">(1)</h3> A judicial officer or other officer of the court may not act as an examiner otherwise than with the concurrence of the senior judicial officer.
+                                                                        </div>
+                                                                        <div><a id="UCPN.UCPR.UCPRN05.R24-4.2"></a>
+                                                                              <h3 class="SS_InlineHeading3">(2)</h3> An applicant for an order for a person’s examination, outside New South Wales, by a judicial officer or other officer of the court may request the proposed examiner to certify the amount which in his or her opinion should be paid into court as provision for expenses of the examination.
+                                                                        </div>
+                                                                        <div><a id="UCPN.UCPR.UCPRN05.R24-4.3"></a>
+                                                                              <h3 class="SS_InlineHeading3">(3)</h3> Such an order may be expressed to be conditional on the payment into court, by such person and within such time as the court may specify, of not less than the amount certified in accordance with <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:58VP-5V51-JP9P-G1Y9-00000-00" data-pinpage="UCPN.UCPR.UCPRN05.R24-4.2" data-contentcomponentid="601298" data-priceplan="subscription" data-pctpguid="urn:pct:166">subrule (2)</a>.
+                                                                        </div>
+                                                                        <div><a id="UCPN.UCPR.UCPRN05.R24-4.4"></a>
+                                                                              <h3 class="SS_InlineHeading3">(4)</h3> If satisfied that the amount paid or payable into court is or may be insufficient to provide for the expenses of the examination, the court, on application of the registrar:<ul class="SS_List">
+                                                                                    <li><a id="UCPN.UCPR.UCPRN05.R24-4.4.A"></a><span class="SS_ListLabel">(a)</span><span class="SS_ListItemContent">may make an order directing the party on whose application the order for examination was made to pay into court such further amount, and within such time, as the court may specify, and</span></li>
+                                                                                    <li><a id="UCPN.UCPR.UCPRN05.R24-4.4.B"></a><span class="SS_ListLabel">(b)</span><span class="SS_ListItemContent">may make an order:<ul class="SS_List">
+                                                                                                      <li><a id="UCPN.UCPR.UCPRN05.R24-4.4.B.I"></a><span class="SS_ListLabel">(i)</span><span class="SS_ListItemContent">staying the proceedings, so far as they concern the whole or any part of any claim for relief by that party, or</span></li>
+                                                                                                      <li><a id="UCPN.UCPR.UCPRN05.R24-4.4.B.II"></a><span class="SS_ListLabel">(ii)</span><span class="SS_ListItemContent">suspending the operation of the order for examination,</span></li>
+                                                                                                </ul>
+                                                                                                <p>until such payment is made.</p>
+                                                                                          </span></li>
+                                                                              </ul>
+                                                                        </div>
+                                                                        <div><a id="UCPN.UCPR.UCPRN05.R24-4.5"></a>
+                                                                              <h3 class="SS_InlineHeading3">(5)</h3> The registrar must apply so much of the amount paid into court as may from time to time be required for the purpose in the payment, to or at the direction of the examiner, of:<ul class="SS_List">
+                                                                                    <li><a id="UCPN.UCPR.UCPRN05.R24-4.5.A"></a><span class="SS_ListLabel">(a)</span><span class="SS_ListItemContent">expenses incurred in relation to the examination, or</span></li>
+                                                                                    <li><a id="UCPN.UCPR.UCPRN05.R24-4.5.B"></a><span class="SS_ListLabel">(b)</span><span class="SS_ListItemContent">advances for expenses to be incurred in relation to the examination.</span></li>
+                                                                              </ul>
+                                                                        </div>
+                                                                        <div><a id="UCPN.UCPR.UCPRN05.R24-4.6"></a>
+                                                                              <h3 class="SS_InlineHeading3">(6)</h3> Any amount paid under <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:58VP-5V51-JP9P-G1Y9-00000-00" data-pinpage="UCPN.UCPR.UCPRN05.R24-4.5" data-contentcomponentid="601298" data-priceplan="subscription" data-pctpguid="urn:pct:166">subrule (5)</a> that is not required for expenses in relation to the examination must be repaid into court.
+                                                                        </div>
+                                                                        <div><a id="UCPN.UCPR.UCPRN05.R24-4.7"></a>
+                                                                              <h3 class="SS_InlineHeading3">(7)</h3> After the conclusion of the examination, on the examiner certifying that no expenses in relation to the examination remain unpaid or unrecouped from the money in court, the registrar must, subject to any order of the court, refund to the person by whom the money was paid into court (and, if more than one, in the same proportions as their respective payments into court) any money remaining in court.
+                                                                        </div><span id="JUMPTO_Annotationsd262747188e367"></span>
+                                                                        <div data-id="HideShow_Commentary"><br><br><a id="UCPN.UCPR.UCPRN05.R24-4.COM1"></a><span class="SS_CommentaryHeader">NOTES</span>
+                                                                              <div class="SS_CommentaryContent"><a id="UCPN.UCPR.24-4-5"></a><span class="SS_Heading"><span class="SS_bf" data-housestyle="EMPHASIS_bf">[24.4.5] Examiner — persons who may be appointed — generally</span></span>
+                                                                                    <div class="SS_LawNowCitation"><span><img src="/images/lawNowLogo.png" alt="" title="">Legislation cited in this paragraph</span>
+                                                                                          <ul>
+                                                                                                <li>(NSW) Supreme Court Act 1970 s&nbsp;83.</li>
+                                                                                                <li>(NSW) <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/legislation-au/urn:contentItem:58X6-P181-FCCX-61CP-00000-00" data-pinpage="NSW_REG_2005-418" data-contentcomponentid="187780" data-priceplan="subscription" data-pctpguid="urn:pct:182">Uniform Civil Procedure Rules 2005</a> r&nbsp;24.4, r&nbsp;24.9.</li>
+                                                                                          </ul>
+                                                                                    </div>
+                                                                                    <p>Any person may be appointed an examiner and may administer any oath required for the taking of the evidence: Supreme Court Act 1970 <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:5D6V-J2V1-F57G-S0YX-00000-00" data-pinpage="UCPN.SC.SCA70.S83" data-contentcomponentid="601296" data-priceplan="subscription" data-pctpguid="urn:pct:166">s&nbsp;83</a>. The choice of the appropriate person in any particular case will depend upon a number of considerations including the convenience of the witness and the parties, the nature of the evidence, its materiality to the proceedings and the nature of any controversy that may exist in relation to it. The appointment of a practising lawyer as the examiner will usually have the twin advantages of combining flexibility as to the time and place of the examination, with knowledge of the appropriate procedures required to be followed: see <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:58VP-5V51-JP9P-G1YG-00000-00" data-pinpage="UCPN.UCPR.UCPRN05.R24-9" data-contentcomponentid="601298" data-priceplan="subscription" data-pctpguid="urn:pct:166">r&nbsp;24.9</a>. (Knowledge of the procedural requirements is especially important where the examination is being conducted for the purpose of foreign proceedings — because of the statutory restrictions on the scope of the examination: see <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:58VP-5V51-JP9P-G1YG-00000-00" data-pinpage="UCPN.UCPR.24-9-5" data-contentcomponentid="601298" data-priceplan="subscription" data-pctpguid="urn:pct:166">[24.9.5]</a> and [SCR&nbsp;58.2.1]). Where issues of credibility arise, or where the evidence is particularly material to the resolution of the proceedings, it may be appropriate to appoint a judge as the examiner: see <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:58VP-5V51-JP9P-G1Y9-00000-00" data-pinpage="UCPN.UCPR.UCPRN05.R24-4" data-contentcomponentid="601298" data-priceplan="subscription" data-pctpguid="urn:pct:166">r&nbsp;24.4</a>.</p><a id="UCPN.UCPR.24-4-10"></a><span class="SS_Heading"><span class="SS_bf" data-housestyle="EMPHASIS_bf">[24.4.10] Examiner — persons who may be appointed — foreign examination venue </span></span>
+                                                                                    <p>The examinations conducted in another jurisdiction must comply with the laws of that jurisdiction. Those laws may require the examination to be conducted before consular officers, may limit the persons who may be examined and may not provide any powers to compel attendance or production of documents. Subject to any such limitation, the choice of examiner is a matter for the appointing court and depends upon the materiality of the evidence and the issues involved. It has been common for the examination to be carried out either by a forum lawyer or official. But a lawyer or other responsible person in the examination jurisdiction can also be appointed as the examiner.</p><a id="UCPN.UCPR.24-4-15"></a><span class="SS_Heading"><span class="SS_bf" data-housestyle="EMPHASIS_bf">[24.4.15] Judge as examiner </span></span>
+                                                                                    <div class="SS_LawNowCitation"><span><img src="/images/lawNowLogo.png" alt="" title="">Legislation cited in this paragraph</span>
+                                                                                          <ul>
+                                                                                                <li>(NSW) <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/legislation-au/urn:contentItem:58X6-P181-FCCX-61CP-00000-00" data-pinpage="NSW_REG_2005-418" data-contentcomponentid="187780" data-priceplan="subscription" data-pctpguid="urn:pct:182">Uniform Civil Procedure Rules 2005</a> r&nbsp;24.11.</li>
+                                                                                                <li>(NSW) Supreme Court Act 1970 s&nbsp;39.</li>
+                                                                                          </ul>
+                                                                                    </div>
+                                                                                    <p>The limited role permitted to an examiner by the provisions of <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:58VP-5V51-JP9P-G1YJ-00000-00" data-pinpage="UCPN.UCPR.UCPRN05.R24-11" data-contentcomponentid="601298" data-priceplan="subscription" data-pctpguid="urn:pct:166">r&nbsp;24.11</a> will usually mean that it is inappropriate for a judge to be made an examiner: <span class="SS_it" data-housestyle="EMPHASIS_it">Henderson v&nbsp;Primmer</span> <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58Y4-SWN1-JFDC-X1JT-00000-00" data-pinpage="" data-contentcomponentid="267690" data-priceplan="subscription" title="Australian Capital Territory Reports" data-pctpguid="urn:pct:170">(1986) 68 ACTR 9</a>; <span title="FLR">84 FLR 265</span>&nbsp;<a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58XX-26B1-JK4W-M4JP-00000-00" data-pinpage="_133263" data-contentcomponentid="267716" data-priceplan="subscription" data-pctpguid="urn:pct:168"><img src="/images/IconSignalCaseBase.png" alt="CaseBase document for this case" title="CaseBase document for this case"></a> citing <span class="SS_it" data-housestyle="EMPHASIS_it">Practice Note: Chancery Deposition</span> <a target="_blank" href="https://iclr.co.uk/pubrefLookup/redirectTo?ref=1981+1+WLR+1560" data-action="ExternalLink">[1981] 1 WLR 1560<span class="SS_ExternalLink"></span></a> at <a target="_blank" href="https://iclr.co.uk/pubrefLookup/redirectTo?ref=1981+1+WLR+1560" data-action="ExternalLink">1561<span class="SS_ExternalLink"></span></a>&nbsp;<a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58Y1-R2G1-JNS1-M4Y1-00000-00" data-pinpage="_7572" data-contentcomponentid="267716" data-priceplan="subscription" data-pctpguid="urn:pct:168"><img src="/images/IconSignalCaseBase.png" alt="CaseBase document for this case" title="CaseBase document for this case"></a>. However, this rule recognises that there may be occasions where the circumstances require that a judge be appointed. The rule makes any such possible appointment subject to the prior concurrence of the Chief Justice who, in accordance with <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:5D6V-J2V1-F57G-S0WS-00000-00" data-pinpage="UCPN.SC.SCA70.S39" data-contentcomponentid="601296" data-priceplan="subscription" data-pctpguid="urn:pct:166">s&nbsp;39</a> of the Supreme Court Act 1970, has a principal role in the intra curial arrangement of the business of the court. The procedure to be followed when making such an application is for a notice of motion and affidavit to be filed in the usual way. (Applications in the Supreme Court should comply with Practice Note <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:5D6V-JB01-JNCK-2426-00000-00" data-pinpage="UCPN.PN.SCG.PN9" data-contentcomponentid="601304" data-priceplan="subscription" data-pctpguid="urn:pct:171">SC Gen 9</a>.) The application will then be referred to the Chief Judge of the relevant division of the court and the Chief Judge will consult with the Chief Justice. A form of order that was made on one such appointment, albeit one made before the introduction of the present rule, is set out in <span class="SS_it" data-housestyle="EMPHASIS_it">Universal Seaways Pty Ltd v&nbsp;Derby and Co (Aust) Pty Ltd</span> (NSWSC, Rogers J, CL 12078/78, 17 April 1980, unreported) (see the “Practice Decisions” guide card in vol 3 at <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:5D6V-J9S1-JNY7-X0X3-00000-00" data-pinpage="UCPN.PRACDEC.456210" data-contentcomponentid="601302" data-priceplan="subscription" data-pctpguid="urn:pct:170">[456,210]</a>). The order made in that case would now require some amendment to comply with the present rule.</p><a id="UCPN.UCPR.24-4-20"></a><span class="SS_Heading"><span class="SS_bf" data-housestyle="EMPHASIS_bf">[24.4.20] Payment of examination expenses </span></span>
+                                                                                    <div class="SS_LawNowCitation"><span><img src="/images/lawNowLogo.png" alt="" title="">Legislation cited in this paragraph</span>
+                                                                                          <ul>
+                                                                                                <li>(NSW) <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/legislation-au/urn:contentItem:58X6-P181-FCCX-61CP-00000-00" data-pinpage="NSW_REG_2005-418" data-contentcomponentid="187780" data-priceplan="subscription" data-pctpguid="urn:pct:182">Uniform Civil Procedure Rules 2005</a> r 24.4(2).</li>
+                                                                                          </ul>
+                                                                                    </div>
+                                                                                    <p>Despite the requirement in <a href="#" data-func="LN.Advance.ContentView.jumpTo" data-id="UCPN.UCPR.UCPRN05.R24-4.2">r 24.4(2)</a> it has been said that it is desirable for the amount of the contemplated expenses to be determined by a judicial officer other than the judge who is to be the examiner: <span class="SS_it" data-housestyle="EMPHASIS_it">Australian Securities and Investments Commission v&nbsp;Rich</span> <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58YC-KPV1-FC1F-M1NP-00000-00" data-pinpage="" data-contentcomponentid="267688" data-priceplan="subscription" title="Australian Corporation &amp; Securities Reports" data-pctpguid="urn:pct:170">(2004) 49 ACSR 578</a>; <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58VX-M1V1-JWXF-220J-00000-00" data-pinpage="" data-contentcomponentid="267706" data-priceplan="subscription" title="Supreme Court of New South Wales" data-pctpguid="urn:pct:170">[2004] NSWSC 467</a>; <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58VX-M1V1-JWXF-220J-00000-00" data-pinpage="" data-contentcomponentid="267706" data-priceplan="subscription" title="Unreported Judgment – Butterworths citation" data-pctpguid="urn:pct:170">BC200403134</a> at <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58VX-M1V1-JWXF-220J-00000-00" data-pinpage="PARA_80_500216" data-contentcomponentid="267706" data-priceplan="subscription" title="Unreported Judgment – Butterworths citation" data-pctpguid="urn:pct:170">[80]</a>&nbsp;<a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58RJ-P331-JTGH-B4VJ-00000-00" data-pinpage="_380494" data-contentcomponentid="267716" data-priceplan="subscription" data-pctpguid="urn:pct:168"><img src="/images/IconSignalCaseBase.png" alt="CaseBase document for this case" title="CaseBase document for this case"></a>; and, for the judge to formally certify the determination actually made by that other judge: see <span class="SS_it" data-housestyle="EMPHASIS_it">Australian Securities and Investments Commission v&nbsp;Rich</span> <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:5B6G-PBH1-F2MB-S02V-00000-00" data-pinpage="" data-contentcomponentid="267688" data-priceplan="subscription" title="Australian Corporation &amp; Securities Reports" data-pctpguid="urn:pct:170">(2004) 50 ACSR 357</a>; <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58VX-M1V1-JWXF-22NN-00000-00" data-pinpage="" data-contentcomponentid="267706" data-priceplan="subscription" title="Supreme Court of New South Wales" data-pctpguid="urn:pct:170">[2004] NSWSC 750</a>; <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58VX-M1V1-JWXF-22NN-00000-00" data-pinpage="" data-contentcomponentid="267706" data-priceplan="subscription" title="Unreported Judgment – Butterworths citation" data-pctpguid="urn:pct:170">BC200405390</a>&nbsp;<a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58RJ-P331-JTGH-B13R-00000-00" data-pinpage="_384990" data-contentcomponentid="267716" data-priceplan="subscription" data-pctpguid="urn:pct:168"><img src="/images/IconSignalCaseBase.png" alt="CaseBase document for this case" title="CaseBase document for this case"></a>.</p>
+                                                                              </div>
+                                                                        </div>
+                                                                  </div>
+                                                            </span>
+                                                      </div>
+                                                      <div class="tocnavlinks footernavlinks">
+                                                            <a href="#" class="previous icon la-TriangleLeft tocdocprev" style="display: inline;">Previous</a>
+                                                            <a href="#" class="next icon la-TriangleRightAfter tocdocnext" style="display: inline;">Next</a>
+                                                      </div>
+                                                </section>
+                                          </section>
+                                          <div id="popup" role="dialog" tabindex="-1"></div>
+                                          <div id="clipboardflyer" class="clipboardflyer"></div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="col my-sidebar ">
+                        <div class="btn-group " role="group " style="width: 100%;height: 36px; ">
+                              <button type="button " class="btn btn-light " style="background: #FFF;border-bottom: none; color: #ED1C24;width: 50%;font-weight: 600; ">About</button>
+                              <button type="button " class="btn btn-light " style="border-radius: 0;background: #F4F4F5; border: 1px solid #bcbec0;width: 50%;font-weight: 600; ">Notes</button>
+                        </div>
+                        <div class="row " style=" border: 1px solid #bcbec0;width: 100%;margin-top: 16px; ">
+                              <div class="doc-options ">About This Document</div>
+                        </div>
+                        <div class="" style=" border: 1px solid #bcbec0;width: 100%;padding: 8px;border-top:none ">
+                              <div>Publication Information</div>
+                              <div class="link-todoc " style="margin-left:20px; ">Ritchie's Uniform Civil Procedure NSW</div>
+                              <div>About the Author</div>
+                              <div class="link-todoc " style="margin-left:20px; ">Peter Taylor SC
+                                    <img style="height:14px;width:14px;margin-left: 6px;" src="img/external-link.png">
+                              </div>
+                              <div>Related Content</div>
+                              <div class="link-todoc " style="margin-left:20px; ">Trial</div>
+                        </div>
+                  </div>
+            
+ <!-- computer vision display -->
+      <video class="videobox canvasbox hidden" autoplay="autoplay" id="myvideo"></video>
+      <canvas id="canvas" class="border canvasbox hidden" style="position: fixed; top: 0; left:0;z-index: 999;"></canvas>
+      <div class="mt10">
+            <img src="asset/images/1.jpg" class="canvasbox  hidden" id="handimage" alt="">
+      </div>
+      <div id="fake" class="hidden" style="background: red;width: 16px;height: 16px; position: fixed; top:100px;"></div>
+            </div>
+      </div>
+
+     
+      <!-- guesture modal -->
+      <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered" role="document">
+                  <div class="modal-content c-modal">
+                        <div class="modal-header">
+                              <h3 class="modal-title" style="text-align: text-center" id="exampleModalLabel" >Enter Guesture Mode</h5>
+                                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                              </button> -->
+                        </div>
+                        <div class="modal-body">
+                             
+                             
+                                    <div class="d-flex justify-content-center">
+                                          <img src="img/voice1.png" style="width: 164px; height:164px;padding: 16px;">
+                                    </div>
+
+                                     <div style="text-align: center; margin-top: 16px;padding: 0 12px;"> Guesture mode will need permission to access to your camera and microphone. After entering mode say "help" to see voice control commands.</div>
+                              
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                             <button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Leave</button>
+                            <button type="button" class="btn btn-primary btn-lg" id="trackbutton">
+                                    <div id="updatenote" class="updatenote mt10"></div>
+                              </button>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <!-- jQuery first, then Tether, then Bootstrap JS. -->
+      <script type="text/javascript " src="js/jquery.js "></script>
+      <script type="text/javascript " src="js/poper.js "></script>
+      <script type="text/javascript " src="js/bootstrap.min.js "></script>
+      <script type="text/javascript " src="js/document.js "></script>
+      <script type="text/javascript" src="js/handtrack.js"></script>
+      <script type="text/javascript " src="js/artyom.window.min.js "></script>
+      <script type="text/javascript " src="js/main.js "></script>
+
+</html>
