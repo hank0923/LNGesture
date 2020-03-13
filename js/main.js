@@ -36,6 +36,15 @@ var helptext = '<span style="padding: 12px 24px;">Say <b>"Exit"</b> to leave mod
 helpSection.innerHTML = helptext;
 
 function startVideo() {
+      // Load the model.
+      handTrack.load(modelParams).then(lmodel => {
+            // detect objects in the image.
+            model = lmodel
+            updateNote.innerText = "Start Mode"
+            runDetectionImage(handimg)
+            trackButton.disabled = false
+            // nextImageButton.disabled = false
+      });
       handTrack.startVideo(video).then(function(status) {
             console.log("video started", status);
             if (status) {
@@ -359,15 +368,7 @@ function runDetectionImage(img) {
       });
 }
 
-// Load the model.
-handTrack.load(modelParams).then(lmodel => {
-      // detect objects in the image.
-      model = lmodel
-      updateNote.innerText = "Start Mode"
-      runDetectionImage(handimg)
-      trackButton.disabled = false
-      // nextImageButton.disabled = false
-});
+
 
 var scale_factor = 1;
 var mouseX, mouseY;
