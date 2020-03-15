@@ -17,7 +17,7 @@ var helpSection = document.getElementById("helpSection");
 
 var imgindex = 1
 var isVideo = false;
-var model = null;
+// var model = null;
 
 video.width = 200;
 video.height = 125;
@@ -144,6 +144,16 @@ function startVoice() {
             }
       });
 
+      function stop() {
+            artyom.fatality().then(() => {
+                  console.log("Artyom succesfully stopped !");
+            });
+            $('#helpSection').addClass('hidden')
+            $('#voiceSection').addClass('hidden')
+            voiceNote.innerHTML = "<span style='font-style:italic; color: #666'>Say 'help' to view voice commands</span>"
+            handTrack.stopVideo(video)
+            isVideo = false;
+      }
 
 }
 
@@ -187,7 +197,7 @@ windowWidth = document.body.clientWidth;
 areaArray = [];
 
 function runDetection() {
-
+      if(model !== undefined && model !== null){
       model.detect(video).then(predictions => {
 
             model.renderPredictions(predictions, canvas, context, video);
@@ -225,8 +235,19 @@ function runDetection() {
             if (isVideo) {
                   requestAnimationFrame(runDetection);
             }
-
       });
+      }else{
+            // Load the model.
+handTrack.load(modelParams).then(lmodel => {
+      // detect objects in the image.
+      model = lmodel
+      updateNote.innerText = "Start Mode"
+      runDetectionImage(handimg)
+      trackButton.disabled = false
+      // nextImageButton.disabled = false
+});
+
+      }
 
 }
 var fist_pos_old
@@ -256,7 +277,7 @@ function scrollPage(coords) {
                   // console.log(fist_pos,fist_pos_old,dx, dy)
 
                   if (dy < 0) { console.log('up'); }
-                  if (dy > 0) { console.log('down') }
+                  if (dy >= 0) { console.log('down') }
                   window.scrollBy(dx * 250, dy * 250);
                   fist_pos = fist_pos_old;
 
