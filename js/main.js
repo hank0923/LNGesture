@@ -62,7 +62,7 @@ function startVideo() {
 function toggleVideo() {
       if (!isVideo) {
             // updateNote.innerText = "Starting video"
-            startVideo();
+            // startVideo();
             startVoice();
             $('#exampleModal').modal('hide')
             $('#voiceSection').removeClass('hidden').addClass('fadeInDown');
@@ -98,7 +98,7 @@ function startVoice() {
       var commandActive = [{
             indexes: ["hand control"], // These spoken words will trigger the execution of the command,
             action: function() { // Action to be executed when a index match with spoken word
-                  startVideo()
+                  startVideo();
                   $('#canvas').removeClass('hidden');
                   $('#helpSection').removeClass('hidden')
                   guestureActivate = true;
