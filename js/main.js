@@ -35,18 +35,20 @@ voiceNote.innerHTML = "<span style='font-style:italic; color: #666'>Say 'help' t
 var helptext = '<span style="padding: 12px 24px;">Say <b>"Exit"</b> to leave mode</span> <span>|</span> <span style="padding: 12px 24px;">Say <b>"Hand control"</b> to activate hand guesture</span><span>|</span> <span style="padding: 12px 24px;">Say <b>"Hide"</b> to hide help</span>'
 helpSection.innerHTML = helptext;
 
-// Load the model.
-// handTrack.load(modelParams).then(lmodel => {
-//       // detect objects in the image.
-//       model = lmodel
-//       updateNote.innerText = "Start Mode"
-//       runDetectionImage(handimg)
-//       trackButton.disabled = false
-//       // nextImageButton.disabled = false
-// });
+
 
 
 function startVideo() {
+      // Load the model.
+handTrack.load(modelParams).then(lmodel => {
+      // detect objects in the image.
+      model = lmodel
+      updateNote.innerText = "Start Mode"
+      runDetectionImage(handimg)
+      trackButton.disabled = false
+      // nextImageButton.disabled = false
+});
+
       handTrack.startVideo(video).then(function(status) {
             console.log("video started", status);
             if (status) {
@@ -62,7 +64,7 @@ function startVideo() {
 function toggleVideo() {
       if (!isVideo) {
             // updateNote.innerText = "Starting video"
-            // startVideo();
+            startVideo();
             startVoice();
             $('#exampleModal').modal('hide')
             $('#voiceSection').removeClass('hidden').addClass('fadeInDown');
@@ -98,7 +100,7 @@ function startVoice() {
       var commandActive = [{
             indexes: ["hand control"], // These spoken words will trigger the execution of the command,
             action: function() { // Action to be executed when a index match with spoken word
-                  startVideo();
+                  startVideo()
                   $('#canvas').removeClass('hidden');
                   $('#helpSection').removeClass('hidden')
                   guestureActivate = true;
@@ -197,15 +199,8 @@ windowWidth = document.body.clientWidth;
 areaArray = [];
 
 function runDetection() {
-                  // Load the model.
-handTrack.load(modelParams).then(lmodel => {
-      // detect objects in the image.
-      model = lmodel
-      updateNote.innerText = "Start Mode"
-      runDetectionImage(handimg)
-      trackButton.disabled = false
-      // nextImageButton.disabled = false
-            model.detect(video).then(predictions => {
+
+      model.detect(video).then(predictions => {
 
             model.renderPredictions(predictions, canvas, context, video);
 
@@ -243,9 +238,6 @@ handTrack.load(modelParams).then(lmodel => {
                   requestAnimationFrame(runDetection);
             }
       });
-});
-     
-
       
 
 }
