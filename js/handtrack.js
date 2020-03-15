@@ -69,7 +69,7 @@
    * =============================================================================
    */
 
-  // const basePath = "https://cdn.jsdelivr.net/npm/handtrackjs/models/web/";
+  const basePath = "https://cdn.jsdelivr.net/npm/handtrackjs/models/web/";
 
   const defaultParams = {
     flipHorizontal: true,
@@ -132,10 +132,10 @@
     constructor(modelParams) {
       // this.modelPath = basePath + modelParams.modelType + "/tensorflowjs_model.pb";
       // this.weightPath = basePath + modelParams.modelType + "/weights_manifest.json"; 
-      this.modelPath = "../asset/model/tensorflowjs_model.pb";
-      this.weightPath = "../asset/model/weights_manifest.json";      
-      // this.modelPath = "https://hank0923.github.io/LNGesture/asset/model/tensorflowjs_model.pb";
-      // this.weightPath = "https://hank0923.github.io/LNGesture/asset/model/weights_manifest.json";
+      // this.modelPath = "../asset/model/tensorflowjs_model.pb";
+      // this.weightPath = "../asset/model/weights_manifest.json";      
+      this.modelPath = "https://hank0923.github.io/LNGesture/asset/model/tensorflowjs_model.pb";
+      this.weightPath = "https://hank0923.github.io/LNGesture/asset/model/weights_manifest.json";
       this.modelParams = modelParams;
     }
 
