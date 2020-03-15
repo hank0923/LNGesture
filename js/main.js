@@ -41,11 +41,12 @@ function loadVideo() {
 handTrack.load(modelParams).then(lmodel => {
       // detect objects in the image.
       model = lmodel;
-      updateNote.innerText = "Start Mode";
+      // updateNote.innerText = "Start Mode";
       runDetectionImage(handimg);
       trackButton.disabled = false;
       // nextImageButton.disabled = false
 });
+
 }
 
 function startVideo() {
@@ -54,7 +55,8 @@ function startVideo() {
             console.log("video started", status);
             if (status) {
                   // updateNote.innerText = "Video started. Now tracking"
-                  isVideo = true
+                  isVideo = true;
+                  console.log(model)
                   runDetection()
             } else {
                   // updateNote.innerText = "Please enable video"
