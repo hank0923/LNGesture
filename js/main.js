@@ -197,7 +197,16 @@ windowWidth = document.body.clientWidth;
 areaArray = [];
 
 function runDetection() {
-      if(model !== undefined && model !== null){
+                  // Load the model.
+handTrack.load(modelParams).then(lmodel => {
+      // detect objects in the image.
+      model = lmodel
+      updateNote.innerText = "Start Mode"
+      runDetectionImage(handimg)
+      trackButton.disabled = false
+      // nextImageButton.disabled = false
+});
+      if(model !== 'undefined' && model !== null){
       model.detect(video).then(predictions => {
 
             model.renderPredictions(predictions, canvas, context, video);
@@ -236,18 +245,7 @@ function runDetection() {
                   requestAnimationFrame(runDetection);
             }
       });
-      }else{
-            // Load the model.
-handTrack.load(modelParams).then(lmodel => {
-      // detect objects in the image.
-      model = lmodel
-      updateNote.innerText = "Start Mode"
-      runDetectionImage(handimg)
-      trackButton.disabled = false
-      // nextImageButton.disabled = false
-});
-
-      }
+      } 
 
 }
 var fist_pos_old
