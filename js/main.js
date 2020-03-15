@@ -205,9 +205,7 @@ handTrack.load(modelParams).then(lmodel => {
       runDetectionImage(handimg)
       trackButton.disabled = false
       // nextImageButton.disabled = false
-});
-      if(model !== 'undefined' && model !== null){
-      model.detect(video).then(predictions => {
+            model.detect(video).then(predictions => {
 
             model.renderPredictions(predictions, canvas, context, video);
 
@@ -245,7 +243,10 @@ handTrack.load(modelParams).then(lmodel => {
                   requestAnimationFrame(runDetection);
             }
       });
-      } 
+});
+     
+
+      
 
 }
 var fist_pos_old
