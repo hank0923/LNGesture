@@ -36,18 +36,19 @@ var helptext = '<span style="padding: 12px 24px;">Say <b>"Exit"</b> to leave mod
 helpSection.innerHTML = helptext;
 
 
-
-
-function startVideo() {
-      // Load the model.
+function loadVideo() {
+            // Load the model.
 handTrack.load(modelParams).then(lmodel => {
       // detect objects in the image.
-      model = lmodel
-      updateNote.innerText = "Start Mode"
-      runDetectionImage(handimg)
-      trackButton.disabled = false
+      model = lmodel;
+      updateNote.innerText = "Start Mode";
+      runDetectionImage(handimg);
+      trackButton.disabled = false;
       // nextImageButton.disabled = false
 });
+}
+
+function startVideo() {
 
       handTrack.startVideo(video).then(function(status) {
             console.log("video started", status);
@@ -62,16 +63,13 @@ handTrack.load(modelParams).then(lmodel => {
 }
 
 function toggleVideo() {
-      if (!isVideo) {
+    
             // updateNote.innerText = "Starting video"
-            startVideo();
+            loadVideo();
             startVoice();
             $('#exampleModal').modal('hide')
             $('#voiceSection').removeClass('hidden').addClass('fadeInDown');
-      } else {
-            handTrack.stopVideo(video)
-            isVideo = false;
-      }
+     
 }
 
 var guestureActivate = false;
