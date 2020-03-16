@@ -147,7 +147,9 @@
       const result = await this.model.executeAsync(zeros([1, 300, 300, 3]));
       result.map(async (t) => await t.data());
       result.map(async (t) => t.dispose());
-      // console.log("model loaded and warmed up")
+
+      console.log("model loaded and warmed up")
+       return result
     }
 
     async detect(input$$1) {

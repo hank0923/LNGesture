@@ -17,7 +17,16 @@ var helpSection = document.getElementById("helpSection");
 
 var imgindex = 1
 var isVideo = false;
-var model;
+var model = handTrack.load(modelParams).then(lmodel => {
+            // detect objects in the image.
+            // console.log(lmodel)
+            model = lmodel;
+            // updateNote.innerText = "Start Mode";
+            runDetectionImage(handimg);
+            // trackButton.disabled = false;
+            isLoaded = true;
+            // nextImageButton.disabled = false
+      });
 var isLoaded = false
 
 video.width = 200;
@@ -42,10 +51,10 @@ function loadVideo() {
       handTrack.load(modelParams).then(lmodel => {
             // detect objects in the image.
             // console.log(lmodel)
-            this.model = lmodel;
+            model = lmodel;
             // updateNote.innerText = "Start Mode";
             runDetectionImage(handimg);
-            trackButton.disabled = false;
+            // trackButton.disabled = false;
             isLoaded = true;
             // nextImageButton.disabled = false
       });
@@ -54,7 +63,7 @@ function loadVideo() {
 
 
 function runDetection() {
-      console.log(isLoaded,'isLoaded')
+      // console.log(isLoaded,'isLoaded')
       if(isLoaded){
             model.detect(video).then(predictions => {
 
@@ -214,6 +223,7 @@ function stop() {
       });
       $('#helpSection').addClass('hidden')
       $('#voiceSection').addClass('hidden')
+      $('#canvas').addClass('hidden');
       voiceNote.innerHTML = "<span style='font-style:italic; color: #666'>Say 'help' to view voice commands</span>"
       handTrack.stopVideo(video)
       isVideo = false;
