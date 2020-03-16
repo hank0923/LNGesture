@@ -67,7 +67,7 @@ function loadVideo() {
 
 function runDetection() {
       // console.log(isLoaded,'isLoaded')
-      if(isLoaded){
+    
             model.detect(video).then(predictions => {
 
                   model.renderPredictions(predictions, canvas, context, video);
@@ -106,9 +106,7 @@ function runDetection() {
                         requestAnimationFrame(runDetection);
                   }
             });
-      }else{
-            runDetection()
-      }      
+         
 }
 
 function startVideo() {
