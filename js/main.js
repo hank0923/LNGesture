@@ -27,7 +27,8 @@ const modelParams = {
 }
 
 
-var model = handTrack.load(modelParams).then(lmodel => {
+var model 
+handTrack.load(modelParams).then(lmodel => {
             // detect objects in the image.
             // console.log(lmodel)
             model = lmodel;
