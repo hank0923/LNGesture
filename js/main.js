@@ -17,6 +17,11 @@ var helpSection = document.getElementById("helpSection");
 
 var imgindex = 1
 var isVideo = false;
+var model;
+var isLoaded = false
+
+video.width = 200;
+video.height = 125;
 
 const modelParams = {
       flipHorizontal: true, // flip e.g for video  
@@ -25,24 +30,6 @@ const modelParams = {
       scoreThreshold: 0.7, // confidence threshold for predictions.
       imageScaleFactor: 0.7,
 }
-
-
-// var model 
-// handTrack.load(modelParams).then(lmodel => {
-//             // detect objects in the image.
-//             // console.log(lmodel)
-//             model = lmodel;
-//             // updateNote.innerText = "Start Mode";
-//             runDetectionImage(handimg);
-//             // trackButton.disabled = false;
-//             isLoaded = true;
-//             // nextImageButton.disabled = false
-//       });
-// var isLoaded = false
-
-video.width = 200;
-video.height = 125;
-
 
 updateNote.innerText = "Start Guesture Mode"
 voiceNote.innerHTML = "<span style='font-style:italic; color: #666'>Say 'help' to view voice commands</span>"
@@ -54,11 +41,11 @@ function loadVideo() {
             // Load the model.
       handTrack.load(modelParams).then(lmodel => {
             // detect objects in the image.
-            // console.log(lmodel)
-            model = lmodel;
+            console.log(lmodel)
+            this.model = lmodel;
             // updateNote.innerText = "Start Mode";
             runDetectionImage(handimg);
-            // trackButton.disabled = false;
+            trackButton.disabled = false;
             isLoaded = true;
             // nextImageButton.disabled = false
       });
@@ -67,62 +54,47 @@ function loadVideo() {
 
 
 function runDetection() {
-      // console.log(isLoaded,'isLoaded')
-  
-handTrack.load(modelParams).then(lmodel => {
-            // detect objects in the image.
-            // console.log(lmodel)
-           var model = lmodel;
-            // updateNote.innerText = "Start Mode";
 
-            // runDetectionImage(handimg);
-            model.detect(handimg).then(predictions => {
-            // console.log("Predictions: ", predictions);
-                  model.renderPredictions(predictions, canvas, context, handimg);
-            });
-            model.detect(video).then(predictions => {
+      model.detect(video).then(predictions => {
 
-                  model.renderPredictions(predictions, canvas, context, video);
+            model.renderPredictions(predictions, canvas, context, video);
 
-                  if (predictions[0]) {
+            if (predictions[0]) {
 
-                        let score = predictions[0].score;
-                        // console.log(score)
-                        // if (score >= 0.9){              
-                        let midvalX = (predictions[0].bbox[2] / 2) + predictions[0].bbox[0];
-                        let midvalY = (predictions[0].bbox[3] / 2) + predictions[0].bbox[1];
+                  let score = predictions[0].score;
+                  // console.log(score)
+                  // if (score >= 0.9){              
+                  let midvalX = (predictions[0].bbox[2] / 2) + predictions[0].bbox[0];
+                  let midvalY = (predictions[0].bbox[3] / 2) + predictions[0].bbox[1];
 
-                        cursorx = windowWidth * (midvalX / video.width)
-                        cursory = windowHeight * (midvalY / video.height)
+                  cursorx = windowWidth * (midvalX / video.width)
+                  cursory = windowHeight * (midvalY / video.height)
 
-                        // moveCursor(cursorx, cursory);
-                        if (guestureActivate) {
-                              scrollPage(predictions);
-                        }
-
-
-                        // triggerMouseHover(cursorx, cursory);
-
-                        var area = predictions[0].bbox[2] * predictions[0].bbox[3];
-                        areaArray.push(area);
-                        // compareArea(predictions);
-
-                  } else {
-                        ElementCursor.setCursor('fake');
-                        ElementCursor.activeCursor();
+                  // moveCursor(cursorx, cursory);
+                  if (guestureActivate) {
+                        scrollPage(predictions);
                   }
 
 
+                  // triggerMouseHover(cursorx, cursory);
 
-                  if (isVideo) {
-                        requestAnimationFrame(runDetection);
-                  }
-            });
-            // trackButton.disabled = false;
-            // nextImageButton.disabled = false
+                  var area = predictions[0].bbox[2] * predictions[0].bbox[3];
+                  areaArray.push(area);
+                  // compareArea(predictions);
+
+            } else {
+                  ElementCursor.setCursor('fake');
+                  ElementCursor.activeCursor();
+            }
+
+
+
+            if (isVideo) {
+                  requestAnimationFrame(runDetection);
+            }
       });
-            
-         
+      
+
 }
 
 function startVideo() {
@@ -142,7 +114,7 @@ function startVideo() {
 function toggleVideo() {
     
             // updateNote.innerText = "Starting video"
-            // loadVideo();
+            loadVideo();
             startVoice();
             $('#exampleModal').modal('hide')
             $('#voiceSection').removeClass('hidden').addClass('fadeInDown');
@@ -240,7 +212,6 @@ function stop() {
       });
       $('#helpSection').addClass('hidden')
       $('#voiceSection').addClass('hidden')
-      $('#canvas').addClass('hidden');
       voiceNote.innerHTML = "<span style='font-style:italic; color: #666'>Say 'help' to view voice commands</span>"
       handTrack.stopVideo(video)
       isVideo = false;
