@@ -27,18 +27,18 @@ const modelParams = {
 }
 
 
-var model 
-handTrack.load(modelParams).then(lmodel => {
-            // detect objects in the image.
-            // console.log(lmodel)
-            model = lmodel;
-            // updateNote.innerText = "Start Mode";
-            runDetectionImage(handimg);
-            // trackButton.disabled = false;
-            isLoaded = true;
-            // nextImageButton.disabled = false
-      });
-var isLoaded = false
+// var model 
+// handTrack.load(modelParams).then(lmodel => {
+//             // detect objects in the image.
+//             // console.log(lmodel)
+//             model = lmodel;
+//             // updateNote.innerText = "Start Mode";
+//             runDetectionImage(handimg);
+//             // trackButton.disabled = false;
+//             isLoaded = true;
+//             // nextImageButton.disabled = false
+//       });
+// var isLoaded = false
 
 video.width = 200;
 video.height = 125;
@@ -68,7 +68,18 @@ function loadVideo() {
 
 function runDetection() {
       // console.log(isLoaded,'isLoaded')
-    
+  
+handTrack.load(modelParams).then(lmodel => {
+            // detect objects in the image.
+            // console.log(lmodel)
+           var model = lmodel;
+            // updateNote.innerText = "Start Mode";
+
+            // runDetectionImage(handimg);
+            model.detect(handimg).then(predictions => {
+            // console.log("Predictions: ", predictions);
+                  model.renderPredictions(predictions, canvas, context, handimg);
+            });
             model.detect(video).then(predictions => {
 
                   model.renderPredictions(predictions, canvas, context, video);
@@ -107,6 +118,10 @@ function runDetection() {
                         requestAnimationFrame(runDetection);
                   }
             });
+            // trackButton.disabled = false;
+            // nextImageButton.disabled = false
+      });
+            
          
 }
 
