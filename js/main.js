@@ -18,6 +18,7 @@ var helpSection = document.getElementById("helpSection");
 var imgindex = 1
 var isVideo = false;
 var model;
+var isLoaded = false
 
 video.width = 200;
 video.height = 125;
@@ -40,11 +41,12 @@ function loadVideo() {
             // Load the model.
       handTrack.load(modelParams).then(lmodel => {
             // detect objects in the image.
-            console.log(lmodel)
+            // console.log(lmodel)
             this.model = lmodel;
             // updateNote.innerText = "Start Mode";
             runDetectionImage(handimg);
             trackButton.disabled = false;
+            isLoaded = true;
             // nextImageButton.disabled = false
       });
 
@@ -52,47 +54,49 @@ function loadVideo() {
 
 
 function runDetection() {
+      console.log(isLoaded,'isLoaded')
+      if(isLoaded){
+            model.detect(video).then(predictions => {
 
-      model.detect(video).then(predictions => {
+                  model.renderPredictions(predictions, canvas, context, video);
 
-            model.renderPredictions(predictions, canvas, context, video);
+                  if (predictions[0]) {
 
-            if (predictions[0]) {
+                        let score = predictions[0].score;
+                        // console.log(score)
+                        // if (score >= 0.9){              
+                        let midvalX = (predictions[0].bbox[2] / 2) + predictions[0].bbox[0];
+                        let midvalY = (predictions[0].bbox[3] / 2) + predictions[0].bbox[1];
 
-                  let score = predictions[0].score;
-                  // console.log(score)
-                  // if (score >= 0.9){              
-                  let midvalX = (predictions[0].bbox[2] / 2) + predictions[0].bbox[0];
-                  let midvalY = (predictions[0].bbox[3] / 2) + predictions[0].bbox[1];
+                        cursorx = windowWidth * (midvalX / video.width)
+                        cursory = windowHeight * (midvalY / video.height)
 
-                  cursorx = windowWidth * (midvalX / video.width)
-                  cursory = windowHeight * (midvalY / video.height)
+                        // moveCursor(cursorx, cursory);
+                        if (guestureActivate) {
+                              scrollPage(predictions);
+                        }
 
-                  // moveCursor(cursorx, cursory);
-                  if (guestureActivate) {
-                        scrollPage(predictions);
+
+                        // triggerMouseHover(cursorx, cursory);
+
+                        var area = predictions[0].bbox[2] * predictions[0].bbox[3];
+                        areaArray.push(area);
+                        // compareArea(predictions);
+
+                  } else {
+                        ElementCursor.setCursor('fake');
+                        ElementCursor.activeCursor();
                   }
 
 
-                  // triggerMouseHover(cursorx, cursory);
 
-                  var area = predictions[0].bbox[2] * predictions[0].bbox[3];
-                  areaArray.push(area);
-                  // compareArea(predictions);
-
-            } else {
-                  ElementCursor.setCursor('fake');
-                  ElementCursor.activeCursor();
-            }
-
-
-
-            if (isVideo) {
-                  requestAnimationFrame(runDetection);
-            }
-      });
-      
-
+                  if (isVideo) {
+                        requestAnimationFrame(runDetection);
+                  }
+            });
+      }else{
+            runDetection()
+      }      
 }
 
 function startVideo() {
