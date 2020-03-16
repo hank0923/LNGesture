@@ -128,7 +128,7 @@ function startVideo() {
 function toggleVideo() {
     
             // updateNote.innerText = "Starting video"
-            loadVideo();
+            // loadVideo();
             startVoice();
             $('#exampleModal').modal('hide')
             $('#voiceSection').removeClass('hidden').addClass('fadeInDown');
