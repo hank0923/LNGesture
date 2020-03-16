@@ -17,6 +17,16 @@ var helpSection = document.getElementById("helpSection");
 
 var imgindex = 1
 var isVideo = false;
+
+const modelParams = {
+      flipHorizontal: true, // flip e.g for video  
+      maxNumBoxes: 1, // maximum number of boxes to detect
+      iouThreshold: 0.2, // ioU threshold for non-max suppression
+      scoreThreshold: 0.7, // confidence threshold for predictions.
+      imageScaleFactor: 0.7,
+}
+
+
 var model = handTrack.load(modelParams).then(lmodel => {
             // detect objects in the image.
             // console.log(lmodel)
@@ -32,13 +42,6 @@ var isLoaded = false
 video.width = 200;
 video.height = 125;
 
-const modelParams = {
-      flipHorizontal: true, // flip e.g for video  
-      maxNumBoxes: 1, // maximum number of boxes to detect
-      iouThreshold: 0.2, // ioU threshold for non-max suppression
-      scoreThreshold: 0.7, // confidence threshold for predictions.
-      imageScaleFactor: 0.7,
-}
 
 updateNote.innerText = "Start Guesture Mode"
 voiceNote.innerHTML = "<span style='font-style:italic; color: #666'>Say 'help' to view voice commands</span>"
