@@ -7,7 +7,7 @@ const video = document.getElementById("myvideo");
 const handimg = document.getElementById("handimage");
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
-var trackButton = document.getElementById("trackbutton");
+const trackButton = document.getElementById("trackbutton");
 // let nextImageButton = document.getElementById("nextimagebutton");
 var updateNote = document.getElementById("updatenote");
 var voiceNote = document.getElementById("voiceInput");
@@ -51,7 +51,7 @@ function loadVideo() {
       });
 
 }
-
+loadVideo();
 
 function runDetection() {
 
@@ -114,7 +114,7 @@ function startVideo() {
 function toggleVideo() {
     
             // updateNote.innerText = "Starting video"
-            loadVideo();
+            // loadVideo();
             startVoice();
             $('#exampleModal').modal('hide')
             $('#voiceSection').removeClass('hidden').addClass('fadeInDown');

@@ -5,6 +5,7 @@
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <script type="text/javascript " src="js/preloadjs.min.js "></script>
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <!-- Lato Font -->
@@ -13,17 +14,21 @@
       <link href="css/doc-style.css" rel="stylesheet">
       <link href="css/custom.css" rel="stylesheet">
       <link href="css/handtrack.css" rel="stylesheet">
+      <link href="css/loading-bar.min.css" rel="stylesheet">
 </head>
 
 <body>
-     <div id="voiceSection" class="row fixed-toolbar voicebar hidden animated">
-        <div class="d-flex justify-content-center" style="width: 100%">
-            <div id="voiceInput" class="voice-input"></div>
-            <div style="width: 48px; margin-left:18px;" id="iconVoice"><img src="img/voice2.png" style="width: 100%"></div>
-        </div>
-        <div id="helpSection" class="d-flex justify-content-center align-items-center hidden" style="width: 100%; padding: 12px 0 0 0">
-            
-        </div>
+      <div id="ldBar" class="ldBar" style="background: rgba(255,255,255,0.4)">
+            <div id="progressbar" style="width: 100%;height: 100%"></div>
+             <div id="progress">...</div>
+      </div>
+      <div id="voiceSection" class="row fixed-toolbar voicebar hidden animated">
+            <div class="d-flex justify-content-center" style="width: 100%">
+                  <div id="voiceInput" class="voice-input"></div>
+                  <div style="width: 48px; margin-left:18px;" id="iconVoice"><img src="img/voice2.png" style="width: 100%"></div>
+            </div>
+            <div id="helpSection" class="d-flex justify-content-center align-items-center hidden" style="width: 100%; padding: 12px 0 0 0">
+            </div>
       </div>
       <div class="row fixed-toolbar" id="top-toolbar">
             <div class="row sub-header " style="width: 100%">
@@ -979,7 +984,7 @@
                                                                         </div><span id="JUMPTO_Annotationsd262747188e367"></span>
                                                                         <div data-id="HideShow_Commentary"><br><br><a id="UCPN.UCPR.UCPRN05.R24-4.COM1"></a><span class="SS_CommentaryHeader">NOTES</span>
                                                                               <div class="SS_CommentaryContent"><a id="UCPN.UCPR.24-4-5"></a><span class="SS_Heading"><span class="SS_bf" data-housestyle="EMPHASIS_bf">[24.4.5] Examiner — persons who may be appointed — generally</span></span>
-                                                                                    <div class="SS_LawNowCitation"><span><img src="/images/lawNowLogo.png" alt="" title="">Legislation cited in this paragraph</span>
+                                                                                    <div class="SS_LawNowCitation"><span>Legislation cited in this paragraph</span>
                                                                                           <ul>
                                                                                                 <li>(NSW) Supreme Court Act 1970 s&nbsp;83.</li>
                                                                                                 <li>(NSW) <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/legislation-au/urn:contentItem:58X6-P181-FCCX-61CP-00000-00" data-pinpage="NSW_REG_2005-418" data-contentcomponentid="187780" data-priceplan="subscription" data-pctpguid="urn:pct:182">Uniform Civil Procedure Rules 2005</a> r&nbsp;24.4, r&nbsp;24.9.</li>
@@ -987,19 +992,19 @@
                                                                                     </div>
                                                                                     <p>Any person may be appointed an examiner and may administer any oath required for the taking of the evidence: Supreme Court Act 1970 <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:5D6V-J2V1-F57G-S0YX-00000-00" data-pinpage="UCPN.SC.SCA70.S83" data-contentcomponentid="601296" data-priceplan="subscription" data-pctpguid="urn:pct:166">s&nbsp;83</a>. The choice of the appropriate person in any particular case will depend upon a number of considerations including the convenience of the witness and the parties, the nature of the evidence, its materiality to the proceedings and the nature of any controversy that may exist in relation to it. The appointment of a practising lawyer as the examiner will usually have the twin advantages of combining flexibility as to the time and place of the examination, with knowledge of the appropriate procedures required to be followed: see <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:58VP-5V51-JP9P-G1YG-00000-00" data-pinpage="UCPN.UCPR.UCPRN05.R24-9" data-contentcomponentid="601298" data-priceplan="subscription" data-pctpguid="urn:pct:166">r&nbsp;24.9</a>. (Knowledge of the procedural requirements is especially important where the examination is being conducted for the purpose of foreign proceedings — because of the statutory restrictions on the scope of the examination: see <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:58VP-5V51-JP9P-G1YG-00000-00" data-pinpage="UCPN.UCPR.24-9-5" data-contentcomponentid="601298" data-priceplan="subscription" data-pctpguid="urn:pct:166">[24.9.5]</a> and [SCR&nbsp;58.2.1]). Where issues of credibility arise, or where the evidence is particularly material to the resolution of the proceedings, it may be appropriate to appoint a judge as the examiner: see <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:58VP-5V51-JP9P-G1Y9-00000-00" data-pinpage="UCPN.UCPR.UCPRN05.R24-4" data-contentcomponentid="601298" data-priceplan="subscription" data-pctpguid="urn:pct:166">r&nbsp;24.4</a>.</p><a id="UCPN.UCPR.24-4-10"></a><span class="SS_Heading"><span class="SS_bf" data-housestyle="EMPHASIS_bf">[24.4.10] Examiner — persons who may be appointed — foreign examination venue </span></span>
                                                                                     <p>The examinations conducted in another jurisdiction must comply with the laws of that jurisdiction. Those laws may require the examination to be conducted before consular officers, may limit the persons who may be examined and may not provide any powers to compel attendance or production of documents. Subject to any such limitation, the choice of examiner is a matter for the appointing court and depends upon the materiality of the evidence and the issues involved. It has been common for the examination to be carried out either by a forum lawyer or official. But a lawyer or other responsible person in the examination jurisdiction can also be appointed as the examiner.</p><a id="UCPN.UCPR.24-4-15"></a><span class="SS_Heading"><span class="SS_bf" data-housestyle="EMPHASIS_bf">[24.4.15] Judge as examiner </span></span>
-                                                                                    <div class="SS_LawNowCitation"><span><img src="/images/lawNowLogo.png" alt="" title="">Legislation cited in this paragraph</span>
+                                                                                    <div class="SS_LawNowCitation"><span>Legislation cited in this paragraph</span>
                                                                                           <ul>
                                                                                                 <li>(NSW) <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/legislation-au/urn:contentItem:58X6-P181-FCCX-61CP-00000-00" data-pinpage="NSW_REG_2005-418" data-contentcomponentid="187780" data-priceplan="subscription" data-pctpguid="urn:pct:182">Uniform Civil Procedure Rules 2005</a> r&nbsp;24.11.</li>
                                                                                                 <li>(NSW) Supreme Court Act 1970 s&nbsp;39.</li>
                                                                                           </ul>
                                                                                     </div>
-                                                                                    <p>The limited role permitted to an examiner by the provisions of <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:58VP-5V51-JP9P-G1YJ-00000-00" data-pinpage="UCPN.UCPR.UCPRN05.R24-11" data-contentcomponentid="601298" data-priceplan="subscription" data-pctpguid="urn:pct:166">r&nbsp;24.11</a> will usually mean that it is inappropriate for a judge to be made an examiner: <span class="SS_it" data-housestyle="EMPHASIS_it">Henderson v&nbsp;Primmer</span> <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58Y4-SWN1-JFDC-X1JT-00000-00" data-pinpage="" data-contentcomponentid="267690" data-priceplan="subscription" title="Australian Capital Territory Reports" data-pctpguid="urn:pct:170">(1986) 68 ACTR 9</a>; <span title="FLR">84 FLR 265</span>&nbsp;<a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58XX-26B1-JK4W-M4JP-00000-00" data-pinpage="_133263" data-contentcomponentid="267716" data-priceplan="subscription" data-pctpguid="urn:pct:168"><img src="/images/IconSignalCaseBase.png" alt="CaseBase document for this case" title="CaseBase document for this case"></a> citing <span class="SS_it" data-housestyle="EMPHASIS_it">Practice Note: Chancery Deposition</span> <a target="_blank" href="https://iclr.co.uk/pubrefLookup/redirectTo?ref=1981+1+WLR+1560" data-action="ExternalLink">[1981] 1 WLR 1560<span class="SS_ExternalLink"></span></a> at <a target="_blank" href="https://iclr.co.uk/pubrefLookup/redirectTo?ref=1981+1+WLR+1560" data-action="ExternalLink">1561<span class="SS_ExternalLink"></span></a>&nbsp;<a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58Y1-R2G1-JNS1-M4Y1-00000-00" data-pinpage="_7572" data-contentcomponentid="267716" data-priceplan="subscription" data-pctpguid="urn:pct:168"><img src="/images/IconSignalCaseBase.png" alt="CaseBase document for this case" title="CaseBase document for this case"></a>. However, this rule recognises that there may be occasions where the circumstances require that a judge be appointed. The rule makes any such possible appointment subject to the prior concurrence of the Chief Justice who, in accordance with <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:5D6V-J2V1-F57G-S0WS-00000-00" data-pinpage="UCPN.SC.SCA70.S39" data-contentcomponentid="601296" data-priceplan="subscription" data-pctpguid="urn:pct:166">s&nbsp;39</a> of the Supreme Court Act 1970, has a principal role in the intra curial arrangement of the business of the court. The procedure to be followed when making such an application is for a notice of motion and affidavit to be filed in the usual way. (Applications in the Supreme Court should comply with Practice Note <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:5D6V-JB01-JNCK-2426-00000-00" data-pinpage="UCPN.PN.SCG.PN9" data-contentcomponentid="601304" data-priceplan="subscription" data-pctpguid="urn:pct:171">SC Gen 9</a>.) The application will then be referred to the Chief Judge of the relevant division of the court and the Chief Judge will consult with the Chief Justice. A form of order that was made on one such appointment, albeit one made before the introduction of the present rule, is set out in <span class="SS_it" data-housestyle="EMPHASIS_it">Universal Seaways Pty Ltd v&nbsp;Derby and Co (Aust) Pty Ltd</span> (NSWSC, Rogers J, CL 12078/78, 17 April 1980, unreported) (see the “Practice Decisions” guide card in vol 3 at <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:5D6V-J9S1-JNY7-X0X3-00000-00" data-pinpage="UCPN.PRACDEC.456210" data-contentcomponentid="601302" data-priceplan="subscription" data-pctpguid="urn:pct:170">[456,210]</a>). The order made in that case would now require some amendment to comply with the present rule.</p><a id="UCPN.UCPR.24-4-20"></a><span class="SS_Heading"><span class="SS_bf" data-housestyle="EMPHASIS_bf">[24.4.20] Payment of examination expenses </span></span>
-                                                                                    <div class="SS_LawNowCitation"><span><img src="/images/lawNowLogo.png" alt="" title="">Legislation cited in this paragraph</span>
+                                                                                    <p>The limited role permitted to an examiner by the provisions of <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:58VP-5V51-JP9P-G1YJ-00000-00" data-pinpage="UCPN.UCPR.UCPRN05.R24-11" data-contentcomponentid="601298" data-priceplan="subscription" data-pctpguid="urn:pct:166">r&nbsp;24.11</a> will usually mean that it is inappropriate for a judge to be made an examiner: <span class="SS_it" data-housestyle="EMPHASIS_it">Henderson v&nbsp;Primmer</span> <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58Y4-SWN1-JFDC-X1JT-00000-00" data-pinpage="" data-contentcomponentid="267690" data-priceplan="subscription" title="Australian Capital Territory Reports" data-pctpguid="urn:pct:170">(1986) 68 ACTR 9</a>; <span title="FLR">84 FLR 265</span>&nbsp;<a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58XX-26B1-JK4W-M4JP-00000-00" data-pinpage="_133263" data-contentcomponentid="267716" data-priceplan="subscription" data-pctpguid="urn:pct:168"></a> citing <span class="SS_it" data-housestyle="EMPHASIS_it">Practice Note: Chancery Deposition</span> <a target="_blank" href="https://iclr.co.uk/pubrefLookup/redirectTo?ref=1981+1+WLR+1560">[1981] 1 WLR 1560<span></span></a> at <a target="_blank" href="https://iclr.co.uk/pubrefLookup/redirectTo?ref=1981+1+WLR+1560" data-action="ExternalLink">1561<span class=""></span></a>&nbsp;<a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58Y1-R2G1-JNS1-M4Y1-00000-00" data-pinpage="_7572" data-contentcomponentid="267716" data-priceplan="subscription" data-pctpguid="urn:pct:168"></a>. However, this rule recognises that there may be occasions where the circumstances require that a judge be appointed. The rule makes any such possible appointment subject to the prior concurrence of the Chief Justice who, in accordance with <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/analytical-materials-au/urn:contentItem:5D6V-J2V1-F57G-S0WS-00000-00" data-pinpage="UCPN.SC.SCA70.S39" data-contentcomponentid="601296" data-priceplan="subscription" data-pctpguid="urn:pct:166">s&nbsp;39</a> of the Supreme Court Act 1970, has a principal role in the intra curial arrangement of the business of the court. The procedure to be followed when making such an application is for a notice of motion and affidavit to be filed in the usual way. (Applications in the Supreme Court should comply with Practice Note <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:5D6V-JB01-JNCK-2426-00000-00" data-pinpage="UCPN.PN.SCG.PN9" data-contentcomponentid="601304" data-priceplan="subscription" data-pctpguid="urn:pct:171">SC Gen 9</a>.) The application will then be referred to the Chief Judge of the relevant division of the court and the Chief Judge will consult with the Chief Justice. A form of order that was made on one such appointment, albeit one made before the introduction of the present rule, is set out in <span class="SS_it" data-housestyle="EMPHASIS_it">Universal Seaways Pty Ltd v&nbsp;Derby and Co (Aust) Pty Ltd</span> (NSWSC, Rogers J, CL 12078/78, 17 April 1980, unreported) (see the “Practice Decisions” guide card in vol 3 at <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:5D6V-J9S1-JNY7-X0X3-00000-00" data-pinpage="UCPN.PRACDEC.456210" data-contentcomponentid="601302" data-priceplan="subscription" data-pctpguid="urn:pct:170">[456,210]</a>). The order made in that case would now require some amendment to comply with the present rule.</p><a id="UCPN.UCPR.24-4-20"></a><span class="SS_Heading"><span class="SS_bf" data-housestyle="EMPHASIS_bf">[24.4.20] Payment of examination expenses </span></span>
+                                                                                    <div class="SS_LawNowCitation"><span>Legislation cited in this paragraph</span>
                                                                                           <ul>
                                                                                                 <li>(NSW) <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/legislation-au/urn:contentItem:58X6-P181-FCCX-61CP-00000-00" data-pinpage="NSW_REG_2005-418" data-contentcomponentid="187780" data-priceplan="subscription" data-pctpguid="urn:pct:182">Uniform Civil Procedure Rules 2005</a> r 24.4(2).</li>
                                                                                           </ul>
                                                                                     </div>
-                                                                                    <p>Despite the requirement in <a href="#" data-func="LN.Advance.ContentView.jumpTo" data-id="UCPN.UCPR.UCPRN05.R24-4.2">r 24.4(2)</a> it has been said that it is desirable for the amount of the contemplated expenses to be determined by a judicial officer other than the judge who is to be the examiner: <span class="SS_it" data-housestyle="EMPHASIS_it">Australian Securities and Investments Commission v&nbsp;Rich</span> <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58YC-KPV1-FC1F-M1NP-00000-00" data-pinpage="" data-contentcomponentid="267688" data-priceplan="subscription" title="Australian Corporation &amp; Securities Reports" data-pctpguid="urn:pct:170">(2004) 49 ACSR 578</a>; <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58VX-M1V1-JWXF-220J-00000-00" data-pinpage="" data-contentcomponentid="267706" data-priceplan="subscription" title="Supreme Court of New South Wales" data-pctpguid="urn:pct:170">[2004] NSWSC 467</a>; <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58VX-M1V1-JWXF-220J-00000-00" data-pinpage="" data-contentcomponentid="267706" data-priceplan="subscription" title="Unreported Judgment – Butterworths citation" data-pctpguid="urn:pct:170">BC200403134</a> at <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58VX-M1V1-JWXF-220J-00000-00" data-pinpage="PARA_80_500216" data-contentcomponentid="267706" data-priceplan="subscription" title="Unreported Judgment – Butterworths citation" data-pctpguid="urn:pct:170">[80]</a>&nbsp;<a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58RJ-P331-JTGH-B4VJ-00000-00" data-pinpage="_380494" data-contentcomponentid="267716" data-priceplan="subscription" data-pctpguid="urn:pct:168"><img src="/images/IconSignalCaseBase.png" alt="CaseBase document for this case" title="CaseBase document for this case"></a>; and, for the judge to formally certify the determination actually made by that other judge: see <span class="SS_it" data-housestyle="EMPHASIS_it">Australian Securities and Investments Commission v&nbsp;Rich</span> <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:5B6G-PBH1-F2MB-S02V-00000-00" data-pinpage="" data-contentcomponentid="267688" data-priceplan="subscription" title="Australian Corporation &amp; Securities Reports" data-pctpguid="urn:pct:170">(2004) 50 ACSR 357</a>; <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58VX-M1V1-JWXF-22NN-00000-00" data-pinpage="" data-contentcomponentid="267706" data-priceplan="subscription" title="Supreme Court of New South Wales" data-pctpguid="urn:pct:170">[2004] NSWSC 750</a>; <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58VX-M1V1-JWXF-22NN-00000-00" data-pinpage="" data-contentcomponentid="267706" data-priceplan="subscription" title="Unreported Judgment – Butterworths citation" data-pctpguid="urn:pct:170">BC200405390</a>&nbsp;<a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58RJ-P331-JTGH-B13R-00000-00" data-pinpage="_384990" data-contentcomponentid="267716" data-priceplan="subscription" data-pctpguid="urn:pct:168"><img src="/images/IconSignalCaseBase.png" alt="CaseBase document for this case" title="CaseBase document for this case"></a>.</p>
+                                                                                    <p>Despite the requirement in <a href="#" data-func="LN.Advance.ContentView.jumpTo" data-id="UCPN.UCPR.UCPRN05.R24-4.2">r 24.4(2)</a> it has been said that it is desirable for the amount of the contemplated expenses to be determined by a judicial officer other than the judge who is to be the examiner: <span class="SS_it" data-housestyle="EMPHASIS_it">Australian Securities and Investments Commission v&nbsp;Rich</span> <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58YC-KPV1-FC1F-M1NP-00000-00" data-pinpage="" data-contentcomponentid="267688" data-priceplan="subscription" title="Australian Corporation &amp; Securities Reports" data-pctpguid="urn:pct:170">(2004) 49 ACSR 578</a>; <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58VX-M1V1-JWXF-220J-00000-00" data-pinpage="" data-contentcomponentid="267706" data-priceplan="subscription" title="Supreme Court of New South Wales" data-pctpguid="urn:pct:170">[2004] NSWSC 467</a>; <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58VX-M1V1-JWXF-220J-00000-00" data-pinpage="" data-contentcomponentid="267706" data-priceplan="subscription" title="Unreported Judgment – Butterworths citation" data-pctpguid="urn:pct:170">BC200403134</a> at <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58VX-M1V1-JWXF-220J-00000-00" data-pinpage="PARA_80_500216" data-contentcomponentid="267706" data-priceplan="subscription" title="Unreported Judgment – Butterworths citation" data-pctpguid="urn:pct:170">[80]</a>&nbsp;<a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58RJ-P331-JTGH-B4VJ-00000-00" data-pinpage="_380494" data-contentcomponentid="267716" data-priceplan="subscription" data-pctpguid="urn:pct:168"></a>; and, for the judge to formally certify the determination actually made by that other judge: see <span class="SS_it" data-housestyle="EMPHASIS_it">Australian Securities and Investments Commission v&nbsp;Rich</span> <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:5B6G-PBH1-F2MB-S02V-00000-00" data-pinpage="" data-contentcomponentid="267688" data-priceplan="subscription" title="Australian Corporation &amp; Securities Reports" data-pctpguid="urn:pct:170">(2004) 50 ACSR 357</a>; <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58VX-M1V1-JWXF-22NN-00000-00" data-pinpage="" data-contentcomponentid="267706" data-priceplan="subscription" title="Supreme Court of New South Wales" data-pctpguid="urn:pct:170">[2004] NSWSC 750</a>; <a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58VX-M1V1-JWXF-22NN-00000-00" data-pinpage="" data-contentcomponentid="267706" data-priceplan="subscription" title="Unreported Judgment – Butterworths citation" data-pctpguid="urn:pct:170">BC200405390</a>&nbsp;<a class="SS_EmbeddedLink" href="#" data-func="LN.Advance.ContentView.getDocument" data-docfullpath="/shared/document/cases-au/urn:contentItem:58RJ-P331-JTGH-B13R-00000-00" data-pinpage="_384990" data-contentcomponentid="267716" data-priceplan="subscription" data-pctpguid="urn:pct:168"></a>.</p>
                                                                               </div>
                                                                         </div>
                                                                   </div>
@@ -1036,54 +1041,82 @@
                               <div class="link-todoc " style="margin-left:20px; ">Trial</div>
                         </div>
                   </div>
-            
- <!-- computer vision display -->
-      <video class="videobox canvasbox hidden" autoplay="autoplay" id="myvideo"></video>
-      <canvas id="canvas" class="border canvasbox hidden" style="position: fixed; top: 0; left:0;z-index: 999;"></canvas>
-      <div class="mt10">
-            <img src="asset/images/1.jpg" class="canvasbox  hidden" id="handimage" alt="">
-      </div>
-      <div id="fake" class="hidden" style="background: red;width: 16px;height: 16px; position: fixed; top:100px;"></div>
+                  <!-- computer vision display -->
+                  <video class="videobox canvasbox hidden" autoplay="autoplay" id="myvideo"></video>
+                  <canvas id="canvas" class="border canvasbox hidden" style="position: fixed; top: 0; left:0;z-index: 999;"></canvas>
+                  <div class="mt10">
+                        <img src="asset/images/1.jpg" class="canvasbox  hidden" id="handimage" alt="">
+                  </div>
+                  <div id="fake" class="hidden" style="background: red;width: 16px;height: 16px; position: fixed; top:100px;"></div>
             </div>
       </div>
-
-     
       <!-- guesture modal -->
       <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog  modal-dialog-centered" role="document">
-                  <div class="modal-content c-modal">
-                        <div class="modal-header">
-                              <h3 class="modal-title" style="text-align: text-center" id="exampleModalLabel" >Enter Guesture Mode</h5>
-                                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content c-modal">
+                  <div class="modal-header">
+                        <h3 class="modal-title" style="text-align: text-center" id="exampleModalLabel">Enter Guesture Mode</h3>
+                              <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                               </button> -->
+                  </div>
+                  <div class="modal-body">
+                        <div class="d-flex justify-content-center">
+                              <img src="img/voice1.png" style="width: 164px; height:164px;padding: 16px;">
                         </div>
-                        <div class="modal-body">
-                             
-                             
-                                    <div class="d-flex justify-content-center">
-                                          <img src="img/voice1.png" style="width: 164px; height:164px;padding: 16px;">
-                                    </div>
-
-                                     <div style="text-align: center; margin-top: 16px;padding: 0 12px;"> Guesture mode will need permission to access to your camera and microphone. After entering mode say "help" to see voice control commands.</div>
-                              
-                        </div>
-                        <div class="modal-footer d-flex justify-content-center">
-                             <button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Leave</button>
-                            <button type="button" class="btn btn-primary btn-lg" id="trackbutton">
-                                    <div id="updatenote" class="updatenote mt10"></div>
-                              </button>
-                        </div>
+                        <div style="text-align: center; margin-top: 16px;padding: 0 12px;"> Guesture mode will need permission to access to your camera and microphone. After entering mode say "help" to see voice control commands.</div>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Leave</button>
+                        <button type="button" class="btn btn-primary btn-lg" id="trackbutton">
+                              <div id="updatenote" class="updatenote mt10"></div>
+                        </button>
                   </div>
             </div>
+      </div>
       </div>
       <!-- jQuery first, then Tether, then Bootstrap JS. -->
       <script type="text/javascript " src="js/jquery.js "></script>
       <script type="text/javascript " src="js/poper.js "></script>
+      <script type="text/javascript " src="js/jquery.loading.min.js "></script>
+      <script type="text/javascript " src="js/loading-bar.min.js "></script>
+      <script type="text/javascript " src="js/preloadjs.min.js "></script>
       <script type="text/javascript " src="js/bootstrap.min.js "></script>
       <script type="text/javascript " src="js/document.js "></script>
       <script type="text/javascript" src="js/handtrack.js"></script>
       <script type="text/javascript " src="js/artyom.window.min.js "></script>
       <script type="text/javascript " src="js/main.js "></script>
+      <script>
+      $('body').loading({
+            overlay: $("#ldBar")
+      });
+      var bar1 = new ldBar("#progressbar");
+      var queue = new createjs.LoadQueue(true);
+      queue.on("complete", handleComplete, this);
+      queue.on("progress", onProgress, this);
+      queue.loadManifest([
+            "asset/model/group1-shard1of5.bin",
+            "asset/model/group1-shard2of5.bin",
+            "asset/model/group1-shard3of5.bin",
+            "asset/model/group1-shard4of5.bin",
+            "asset/model/group1-shard5of5.bin",
+            "asset/model/tensorflowjs_model.pb",
+            "asset/model/weights_manifest.json",
+      ]);
+
+      function handleComplete() {
+            console.log("loaded");
+            $('body').loading('stop');
+      }
+      function handleFileLoad(event, total){
+             console.log(event, total);
+      }
+      function onProgress(event) {
+        var progress = Math.round(event.progress * 100);
+        console.log(progress);
+        $('#progress').text(progress + '%');
+        bar1.set(progress);
+      }
+      </script>
 
 </html>

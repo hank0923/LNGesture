@@ -1,3 +1,24 @@
+#progress {
+  font-size: 50px;
+  left: 50%;
+  letter-spacing: 0.1em;
+  margin: -25px 0 0 -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 200px;
+}
+.ldBar path.mainline {
+    stroke-width: 1;
+    stroke-linecap: round;
+  }
+  .ldBar path.baseline {
+    stroke-width: 1;
+    stroke: #f1f2f3;
+    stroke-linecap: round;
+  }
+
+
 body,
 html {
       /*font-family: Lato, Helvetica, Arial, sans-serif;*/
